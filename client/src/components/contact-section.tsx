@@ -181,7 +181,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-cream/80">hello@everfor.family</div>
+                  <div className="text-cream/80">blake@everfor.family</div>
                 </div>
               </div>
               
