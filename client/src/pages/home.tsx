@@ -29,18 +29,18 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-soft-beige">
       <Navigation onBookingClick={openBookingModal} />
       <HeroSection onBookingClick={openBookingModal} onVideoClick={openVideoModal} />
       
       {/* What Is EVERfor Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-cream/50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-medium text-deep-charcoal mb-8">
               A legacy you can see, hear, and feel.
             </h2>
-            <div className="text-xl text-warm-gray max-w-3xl mx-auto leading-relaxed space-y-2">
+            <div className="text-lg text-warm-gray max-w-3xl mx-auto leading-relaxed space-y-3">
               <p>Not a home video.</p>
               <p>Not a journal in a drawer.</p>
               <p>EVERfor captures a person—who they are, how they speak, what they believe.</p>
@@ -51,10 +51,10 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-white/70">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-medium text-deep-charcoal mb-8">
               How It Works
             </h2>
           </div>

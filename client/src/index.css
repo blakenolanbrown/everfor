@@ -26,15 +26,17 @@
   --ring: hsl(221, 39%, 24%);
   --radius: 0.5rem;
   
-  /* EVERfor Brand Colors */
-  --gold: hsl(45, 79%, 53%);
-  --gold-light: hsl(45, 84%, 58%);
-  --gold-dark: hsl(45, 74%, 43%);
-  --navy: hsl(221, 39%, 24%);
-  --navy-light: hsl(221, 32%, 35%);
-  --cream: hsl(47, 64%, 96%);
-  --warm-gray: hsl(219, 5%, 45%);
-  --burgundy: hsl(338, 75%, 32%);
+  /* EVERfor Brand Colors - Refined Palette */
+  --gold: hsl(45, 45%, 65%);
+  --gold-light: hsl(45, 50%, 70%);
+  --gold-dark: hsl(45, 40%, 55%);
+  --navy: hsl(220, 25%, 20%);
+  --navy-light: hsl(220, 20%, 30%);
+  --cream: hsl(47, 30%, 95%);
+  --warm-gray: hsl(220, 10%, 55%);
+  --burgundy: hsl(350, 30%, 40%);
+  --deep-charcoal: hsl(220, 15%, 15%);
+  --soft-beige: hsl(45, 20%, 88%);
 }
 
 .dark {
@@ -218,4 +220,20 @@
 
 .border-cream {
   border-color: var(--cream);
+}
+
+.bg-deep-charcoal {
+  background-color: var(--deep-charcoal);
+}
+
+.bg-soft-beige {
+  background-color: var(--soft-beige);
+}
+
+.text-deep-charcoal {
+  color: var(--deep-charcoal);
+}
+
+.text-soft-beige {
+  color: var(--soft-beige);
 }

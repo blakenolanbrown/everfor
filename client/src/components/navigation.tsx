@@ -26,14 +26,14 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-gold/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-deep-charcoal/95 backdrop-blur-md border-b border-gold/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
               <Infinity className="text-cream text-lg" />
             </div>
-            <span className="font-playfair text-2xl font-semibold text-cream">EVERfor</span>
+            <span className="font-playfair text-2xl font-medium text-soft-beige">EVERfor</span>
           </div>
           
           {/* Desktop Menu */}
@@ -42,7 +42,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-cream hover:text-gold transition-colors font-medium"
+                className="text-soft-beige hover:text-gold transition-colors font-medium"
               >
                 {item.label}
               </button>
@@ -51,9 +51,9 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
           
           <Button 
             onClick={onBookingClick}
-            className="hidden md:flex bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 hover:bg-gold-light"
+            className="hidden md:flex bg-gold/90 text-deep-charcoal font-medium px-6 py-3 rounded-lg hover:bg-gold transition-all duration-300 shadow-sm"
           >
-            Book Consultation
+            Start a Conversation
           </Button>
           
           {/* Mobile Menu */}

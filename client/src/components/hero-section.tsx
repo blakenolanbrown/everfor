@@ -15,47 +15,40 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-deep-charcoal">
+      {/* Subtle Background */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
-          alt="Grandmother reading to grandchildren" 
-          className="w-full h-full object-cover" 
-        />
-        <div className="absolute inset-0 video-overlay"></div>
-      </div>
-      {/* Golden Thread Animation */}
-      <div className="absolute top-1/4 right-1/4 w-32 h-32 opacity-30 animate-golden-thread">
-        <Infinity className="text-gold text-6xl w-full h-full" />
+        <div className="w-full h-full bg-gradient-to-br from-deep-charcoal via-navy to-navy-light"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/40 to-transparent"></div>
       </div>
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <h1 className="font-playfair text-5xl md:text-7xl font-bold text-cream mb-6 animate-fade-in-up">
-          Preserve more than a memory.
-          <span className="block text-gold">Capture their presence.</span>
+        <h1 className="font-playfair text-4xl md:text-6xl font-normal text-soft-beige mb-8 animate-fade-in-up leading-relaxed">
+          Their stories deserve
+          <span className="block text-gold font-medium">to live forever.</span>
         </h1>
         
-        <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up text-[#F5F0E1]" style={{animationDelay: '0.3s'}}>
-          EVERfor creates cinematic interviews that preserve your loved one's voice, story, and wisdom—for generations to come.
+        <p className="text-lg md:text-xl mb-10 leading-relaxed animate-fade-in-up text-soft-beige/90 max-w-2xl mx-auto" style={{animationDelay: '0.3s'}}>
+          Gentle, reverent conversations that become timeless keepsakes. 
+          We help families preserve the voices and wisdom of those they cherish most.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <Button 
             onClick={onBookingClick}
-            className="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            className="bg-gold/90 text-deep-charcoal font-medium px-8 py-3 rounded-lg text-base hover:bg-gold transition-all duration-300 shadow-sm"
           >
-            <Calendar className="mr-2 h-5 w-5" />
-            Book a Legacy Call
+            <Calendar className="mr-2 h-4 w-4" />
+            Start a Conversation
           </Button>
           
           <Button 
             onClick={scrollToGallery}
             variant="outline"
-            className="border-2 border-gold text-gold font-semibold px-8 py-4 rounded-full text-lg hover:bg-gold hover:text-navy transition-all duration-300"
+            className="border border-gold/60 text-gold/90 font-medium px-8 py-3 rounded-lg text-base hover:bg-gold/10 transition-all duration-300"
           >
-            <Play className="mr-2 h-5 w-5" />
-            Watch Preview
+            <Play className="mr-2 h-4 w-4" />
+            See Our Work
           </Button>
         </div>
       </div>
