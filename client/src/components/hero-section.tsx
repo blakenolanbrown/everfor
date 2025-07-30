@@ -25,12 +25,10 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
         />
         <div className="absolute inset-0 video-overlay"></div>
       </div>
-      
       {/* Golden Thread Animation */}
       <div className="absolute top-1/4 right-1/4 w-32 h-32 opacity-30 animate-golden-thread">
         <Infinity className="text-gold text-6xl w-full h-full" />
       </div>
-      
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="font-playfair text-5xl md:text-7xl font-bold text-cream mb-6 animate-fade-in-up">
@@ -38,7 +36,7 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
           <span className="block text-gold">Capture their presence.</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-cream/90 mb-8 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+        <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up text-[6A8D92]" style={{animationDelay: '0.3s'}}>
           EVERfor creates cinematic interviews that preserve your loved one's voice, story, and wisdom—for generations to come.
         </p>
         
@@ -61,7 +59,6 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
           </Button>
         </div>
       </div>
-      
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-cream text-2xl h-8 w-8" />
