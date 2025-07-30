@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(249, 42%, 97%);
+  --foreground: hsl(221, 39%, 24%);
+  --muted: hsl(47, 64%, 96%);
+  --muted-foreground: hsl(219, 5%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(221, 39%, 24%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(221, 39%, 24%);
+  --border: hsl(45, 17%, 88%);
+  --input: hsl(45, 17%, 88%);
+  --primary: hsl(45, 79%, 53%);
+  --primary-foreground: hsl(221, 39%, 24%);
+  --secondary: hsl(47, 64%, 96%);
+  --secondary-foreground: hsl(221, 39%, 24%);
+  --accent: hsl(47, 64%, 96%);
+  --accent-foreground: hsl(221, 39%, 24%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(221, 39%, 24%);
+  --radius: 0.5rem;
+  
+  /* EVERfor Brand Colors */
+  --gold: hsl(45, 79%, 53%);
+  --gold-light: hsl(45, 84%, 58%);
+  --gold-dark: hsl(45, 74%, 43%);
+  --navy: hsl(221, 39%, 24%);
+  --navy-light: hsl(221, 32%, 35%);
+  --cream: hsl(47, 64%, 96%);
+  --warm-gray: hsl(219, 5%, 45%);
+  --burgundy: hsl(338, 75%, 32%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(45, 79%, 53%);
+  --primary-foreground: hsl(221, 39%, 24%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-crimson {
+  font-family: 'Crimson Text', serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes goldenThread {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-golden-thread {
+  animation: goldenThread 3s ease-in-out infinite;
+}
+
+.video-overlay {
+  background: linear-gradient(135deg, rgba(27, 41, 81, 0.8) 0%, rgba(212, 175, 55, 0.2) 100%);
+}
+
+.service-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+}
+
+.golden-border {
+  position: relative;
+}
+
+.golden-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--gold), var(--gold-light), var(--gold));
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-gold-light {
+  color: var(--gold-light);
+}
+
+.text-gold-dark {
+  color: var(--gold-dark);
+}
+
+.text-navy {
+  color: var(--navy);
+}
+
+.text-navy-light {
+  color: var(--navy-light);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.text-warm-gray {
+  color: var(--warm-gray);
+}
+
+.text-burgundy {
+  color: var(--burgundy);
+}
+
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.bg-gold-light {
+  background-color: var(--gold-light);
+}
+
+.bg-gold-dark {
+  background-color: var(--gold-dark);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.bg-navy-light {
+  background-color: var(--navy-light);
+}
+
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.bg-warm-gray {
+  background-color: var(--warm-gray);
+}
+
+.bg-burgundy {
+  background-color: var(--burgundy);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.border-navy {
+  border-color: var(--navy);
+}
+
+.border-cream {
+  border-color: var(--cream);
+}

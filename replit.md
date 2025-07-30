@@ -1,0 +1,90 @@
+# EVERfor Family Legacy Platform
+
+## Overview
+
+EVERfor is a professional family legacy video preservation platform that connects families with videography services to capture and preserve precious family stories before they're lost forever. The application is built as a modern single-page web application with a focus on emotional storytelling and premium service offerings.
+
+## User Preferences
+
+Preferred communication style: Simple, everyday language.
+
+## System Architecture
+
+The application follows a full-stack TypeScript architecture with a clear separation between client and server concerns:
+
+- **Frontend**: React-based single-page application with modern UI components
+- **Backend**: Express.js server with RESTful API architecture
+- **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
+- **Styling**: Tailwind CSS with a sophisticated design system
+- **State Management**: React Query for server state management
+- **Build System**: Vite for fast development and optimized production builds
+
+## Key Components
+
+### Frontend Architecture
+- **React with TypeScript**: Type-safe component development
+- **Wouter**: Lightweight client-side routing
+- **React Query**: Server state management and caching
+- **Shadcn/ui**: Premium UI component library built on Radix UI
+- **Tailwind CSS**: Utility-first styling with custom brand colors
+
+### Backend Architecture
+- **Express.js**: Lightweight web server framework
+- **TypeScript**: Type safety across the entire backend
+- **Drizzle ORM**: Type-safe database query builder
+- **In-memory storage**: Temporary storage solution for development
+
+### Database Schema
+The application uses a simple lead capture schema:
+- **leads table**: Stores contact form submissions with fields for name, email, phone, package selection, and message
+- **PostgreSQL**: Production database with UUID primary keys and timestamp tracking
+
+### UI Design System
+- **Brand Colors**: Gold (#E6B73A), Navy (#3A4A66), Cream (#FDFCF5)
+- **Typography**: Playfair Display for headings, system fonts for body text
+- **Component Library**: Comprehensive set of reusable UI components
+
+## Data Flow
+
+1. **User Interaction**: Visitors browse the marketing site and submit contact forms
+2. **Form Submission**: Contact data is validated using Zod schemas and sent to the API
+3. **Data Storage**: Lead information is stored in the database via Drizzle ORM
+4. **Response Handling**: Success/error feedback provided through toast notifications
+5. **Admin Access**: Lead data can be retrieved via API endpoints for management
+
+## External Dependencies
+
+### Core Framework Dependencies
+- **React ecosystem**: React, React DOM, React Query for frontend
+- **Express.js**: Web server framework
+- **Drizzle**: Database ORM and migrations
+- **Radix UI**: Headless UI primitives for accessibility
+
+### Styling and UI
+- **Tailwind CSS**: Utility-first CSS framework
+- **Lucide Icons**: Consistent iconography
+- **Class Variance Authority**: Component variant management
+
+### Development Tools
+- **Vite**: Fast build tool and development server
+- **TypeScript**: Static type checking
+- **ESBuild**: Fast JavaScript/TypeScript bundler
+
+### Database
+- **@neondatabase/serverless**: PostgreSQL database driver
+- **Drizzle Kit**: Database migration and introspection tools
+
+## Deployment Strategy
+
+The application is configured for deployment with:
+
+- **Build Process**: Vite builds the client, ESBuild bundles the server
+- **Environment Variables**: DATABASE_URL for database connection
+- **Static Asset Serving**: Express serves built client files in production
+- **Database Migrations**: Drizzle Kit handles schema changes
+
+### Development vs Production
+- **Development**: Vite dev server with HMR, in-memory storage fallback
+- **Production**: Built static assets served by Express, PostgreSQL database
+
+The architecture supports easy scaling from development to production while maintaining type safety and developer experience throughout the stack.
