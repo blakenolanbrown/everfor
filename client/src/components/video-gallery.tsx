@@ -16,9 +16,11 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
             {videoGallery.title}
           </h2>
-          <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            {videoGallery.subtitle}
-          </p>
+          <div className="text-xl text-warm-gray max-w-3xl mx-auto text-center">
+            <p>Every conversation tells a story worth remembering.</p>
+            <p>See how we help families capture these precious moments</p>
+            <p>with cinematic quality and heartfelt authenticity.</p>
+          </div>
         </div>
         
         {/* Featured Video */}
