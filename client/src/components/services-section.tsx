@@ -64,7 +64,7 @@ export default function ServicesSection({ onBookingClick }: ServicesSectionProps
           </h2>
           <div className="text-xl text-warm-gray max-w-3xl mx-auto text-center">
             <p className="mb-2">Each package is designed to honor your family's unique story</p>
-            <p>with the care and artistry it deserves.</p>
+            <p>with the consideration it deserves.</p>
           </div>
         </div>
         
