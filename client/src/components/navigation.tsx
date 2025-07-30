@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Infinity } from "lucide-react";
+import { siteContent } from "@/config/content";
 
 interface NavigationProps {
   onBookingClick: () => void;
@@ -18,12 +19,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
     setIsOpen(false);
   };
 
-  const navItems = [
-    { label: "Services", href: "services" },
-    { label: "Gallery", href: "gallery" },
-    { label: "About", href: "about" },
-    { label: "Contact", href: "contact" },
-  ];
+  const { navigation } = siteContent;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-deep-charcoal/95 backdrop-blur-md border-b border-gold/30">
@@ -33,12 +29,12 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
             <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
               <Infinity className="text-cream text-lg" />
             </div>
-            <span className="font-playfair text-2xl font-medium text-soft-beige">EVERfor</span>
+            <span className="font-playfair text-2xl font-medium text-soft-beige">{navigation.brandName}</span>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
+            {navigation.menuItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
@@ -51,9 +47,9 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
           
           <Button 
             onClick={onBookingClick}
-            className="hidden md:flex bg-gold/90 text-deep-charcoal font-medium px-6 py-3 rounded-lg hover:bg-gold transition-all duration-300 shadow-sm"
+            className="hidden md:flex bg-gold text-deep-charcoal font-semibold px-6 py-3 rounded-lg hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Start a Conversation
+            {navigation.ctaButtonText}
           </Button>
           
           {/* Mobile Menu */}
@@ -65,7 +61,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
             </SheetTrigger>
             <SheetContent side="right" className="bg-cream">
               <div className="flex flex-col space-y-6 mt-8">
-                {navItems.map((item) => (
+                {navigation.menuItems.map((item) => (
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
@@ -79,9 +75,9 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
                     setIsOpen(false);
                     onBookingClick();
                   }}
-                  className="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold py-3 rounded-full hover:shadow-lg transition-all duration-300"
+                  className="bg-gold text-deep-charcoal font-semibold py-3 rounded-lg hover:bg-gold-light transition-all duration-300 shadow-sm"
                 >
-                  Book Consultation
+                  {navigation.ctaButtonText}
                 </Button>
               </div>
             </SheetContent>

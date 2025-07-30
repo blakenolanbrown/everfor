@@ -91,3 +91,16 @@ The application is configured for deployment with:
 - **Production**: Built static assets served by Express, PostgreSQL database
 
 The architecture supports easy scaling from development to production while maintaining type safety and developer experience throughout the stack.
+
+## Recent Changes
+
+**July 30, 2025 - Website Redesign & Content Management**
+- ✓ Transformed from bright/aggressive design to calming, sophisticated dark color scheme
+- ✓ Implemented muted color palette (deep charcoal, navy, gold accents) for welcoming atmosphere  
+- ✓ Fixed readability issues: Enhanced subheading visibility and button prominence
+- ✓ Changed messaging to "Their stories deserve to live forever" - reverent, non-urgent tone
+- ✓ Updated all call-to-action buttons to "Start a Conversation" for softer approach
+- ✓ Created centralized content management system in `client/src/config/content.ts`
+- ✓ Added easy video link updating system with YouTube integration
+- ✓ Implemented configurable profile picture and bio system  
+- ✓ Created comprehensive content guide (`CONTENT_GUIDE.md`) for easy updates

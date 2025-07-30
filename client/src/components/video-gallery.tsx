@@ -1,38 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { Play } from "lucide-react";
+import { Play, Clock } from "lucide-react";
+import { siteContent } from "@/config/content";
 
 interface VideoGalleryProps {
   onVideoClick: (videoId?: string) => void;
 }
 
-const videoThumbnails = [
-  {
-    id: "wisdom",
-    title: "The Wisdom of Generations",
-    image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
-  },
-  {
-    id: "traditions",
-    title: "Family Traditions Live On",
-    image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
-  },
-  {
-    id: "love-story",
-    title: "A Love Story Remembered",
-    image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
-  }
-];
-
 export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
+  const { videoGallery } = siteContent;
+  
   return (
     <section id="gallery" className="py-20 bg-gradient-to-br from-cream to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
-            Preview Our Work
+            {videoGallery.title}
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            See how we transform intimate family conversations into cinematic treasures.
+            {videoGallery.subtitle}
           </p>
         </div>
         
@@ -68,7 +53,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
         
         {/* Video Thumbnails Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {videoThumbnails.map((video) => (
+          {videoGallery.videos.map((video) => (
             <div 
               key={video.id}
               onClick={() => onVideoClick(video.id)}
@@ -77,7 +62,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
               <div className="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video relative">
                   <img 
-                    src={video.image} 
+                    src={video.thumbnailUrl} 
                     alt={video.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
                   />
@@ -86,9 +71,14 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
                       <Play className="text-navy ml-1 h-5 w-5" />
                     </div>
                   </div>
+                  <div className="absolute bottom-2 right-2 bg-black/60 text-white px-2 py-1 rounded text-xs flex items-center">
+                    <Clock className="w-3 h-3 mr-1" />
+                    {video.duration}
+                  </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-cream text-sm">{video.title}</h4>
+                  <h4 className="font-semibold text-cream text-sm mb-1">{video.title}</h4>
+                  <p className="text-cream/70 text-xs">{video.description}</p>
                 </div>
               </div>
             </div>
