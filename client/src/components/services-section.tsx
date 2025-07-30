@@ -62,9 +62,10 @@ export default function ServicesSection({ onBookingClick }: ServicesSectionProps
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
             Choose Your Legacy Package
           </h2>
-          <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            Each package is designed to honor your family's unique story with the care and artistry it deserves.
-          </p>
+          <div className="text-xl text-warm-gray max-w-3xl mx-auto text-center">
+            <p className="mb-2">Each package is designed to honor your family's unique story</p>
+            <p>with the care and artistry it deserves.</p>
+          </div>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
