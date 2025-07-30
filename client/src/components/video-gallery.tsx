@@ -45,7 +45,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
               <h3 className="font-playfair text-2xl font-semibold text-cream mb-3">
                 "Stories of a Lifetime" - Featured Legacy Film
               </h3>
-              <p className="text-cream/80 leading-relaxed">
+              <p className="text-cream leading-relaxed">
                 Experience how we transform intimate family conversations into cinematic treasures 
                 that will be cherished for generations.
               </p>
@@ -80,7 +80,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
                 </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-cream text-sm mb-1">{video.title}</h4>
-                  <p className="text-cream/70 text-xs">{video.description}</p>
+                  <p className="text-very-light-grey text-xs">{video.description}</p>
                 </div>
               </div>
             </div>
