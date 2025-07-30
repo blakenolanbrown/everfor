@@ -7,7 +7,7 @@ export const siteContent = {
     title: "Their stories deserve",
     titleHighlight: "to live forever.",
     subtitle: "Gentle, reverent conversations that become timeless keepsakes.|Preserve the voices and wisdom of those you cherish most.",
-    primaryButtonText: "Start a Conversation",
+    primaryButtonText: "Book a Legacy Session",
     secondaryButtonText: "See Our Work"
   },
 
@@ -21,7 +21,7 @@ export const siteContent = {
       { label: "How It Works", href: "process" },
       { label: "Contact", href: "contact" }
     ],
-    ctaButtonText: "Start a Conversation"
+    ctaButtonText: "Book a Legacy Session"
   },
 
   // Video Gallery - Easy to update video links

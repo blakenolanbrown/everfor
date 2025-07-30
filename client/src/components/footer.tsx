@@ -74,7 +74,7 @@ export default function Footer({ onBookingClick }: FooterProps) {
                   onClick={onBookingClick}
                   className="bg-gold text-deep-charcoal font-semibold px-6 py-3 rounded-lg hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Start a Conversation
+                  Book a Legacy Session
                 </Button>
               </div>
             </div>
