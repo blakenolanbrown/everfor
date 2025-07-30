@@ -31,9 +31,13 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
           <span className="block text-gold font-medium">{hero.titleHighlight}</span>
         </h1>
         
-        <p className="text-lg md:text-xl mb-10 leading-relaxed animate-fade-in-up text-cream max-w-2xl mx-auto" style={{animationDelay: '0.3s'}}>
-          {hero.subtitle}
-        </p>
+        <div className="text-lg md:text-xl mb-10 leading-relaxed animate-fade-in-up text-cream max-w-2xl mx-auto text-center" style={{animationDelay: '0.3s'}}>
+          {hero.subtitle.split('|').map((line, index) => (
+            <p key={index} className="mb-2 last:mb-0">
+              {line.trim()}
+            </p>
+          ))}
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <Button 

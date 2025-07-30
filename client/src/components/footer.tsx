@@ -25,7 +25,7 @@ export default function Footer({ onBookingClick }: FooterProps) {
               </div>
               <span className="font-playfair text-2xl font-semibold text-cream">EVERfor</span>
             </div>
-            <p className="text-cream/70 leading-relaxed">
+            <p className="text-cream/90 leading-relaxed hover:text-cream transition-colors duration-300">
               Preserving family legacies with reverence, artistry, and the understanding that every story matters.
             </p>
           </div>
@@ -36,25 +36,25 @@ export default function Footer({ onBookingClick }: FooterProps) {
             <div className="space-y-2">
               <button 
                 onClick={() => scrollToSection('services')}
-                className="block text-cream/70 hover:text-gold transition-colors text-left"
+                className="block text-cream/90 hover:text-gold transition-colors text-left"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('gallery')}
-                className="block text-cream/70 hover:text-gold transition-colors text-left"
+                className="block text-cream/90 hover:text-gold transition-colors text-left"
               >
                 Gallery
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="block text-cream/70 hover:text-gold transition-colors text-left"
+                className="block text-cream/90 hover:text-gold transition-colors text-left"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="block text-cream/70 hover:text-gold transition-colors text-left"
+                className="block text-cream/90 hover:text-gold transition-colors text-left"
               >
                 Contact
               </button>
@@ -64,9 +64,9 @@ export default function Footer({ onBookingClick }: FooterProps) {
           {/* Contact Info */}
           <div>
             <h4 className="font-semibold text-cream mb-4">Get In Touch</h4>
-            <div className="space-y-2 text-cream/70">
-              <div>hello@everfor.family</div>
-              <div>(555) 123-EVER</div>
+            <div className="space-y-2 text-cream/90">
+              <div className="hover:text-cream transition-colors duration-300">hello@everfor.family</div>
+              <div className="hover:text-cream transition-colors duration-300">(555) 123-EVER</div>
               <div className="pt-4">
                 <Button 
                   onClick={onBookingClick}
@@ -80,7 +80,7 @@ export default function Footer({ onBookingClick }: FooterProps) {
         </div>
         
         <div className="border-t border-gold/20 mt-12 pt-8 text-center">
-          <p className="text-cream/60">
+          <p className="text-cream/80 hover:text-cream/95 transition-colors duration-300">
             © 2024 EVERfor. All rights reserved. • Preserving legacies, one story at a time.
           </p>
         </div>
