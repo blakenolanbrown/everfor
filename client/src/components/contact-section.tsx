@@ -71,9 +71,8 @@ export default function ContactSection() {
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
             Let's Begin Your Legacy
           </h2>
-          <p className="text-xl text-cream/80 max-w-3xl mx-auto">
-            Every moment matters. Every story deserves to be preserved. Let's capture your family's legacy together.
-          </p>
+          <p className="text-xl text-cream/80 max-w-3xl mx-auto">Every moment matters. Every story deserves to be preserved. 
+          Let's capture your family's legacy together.</p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
