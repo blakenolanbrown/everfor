@@ -36,7 +36,7 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
           <span className="block text-gold">Capture their presence.</span>
         </h1>
         
-        <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up text-[F5F0E1]" style={{animationDelay: '0.3s'}}>
+        <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up text-[#F5F0E1]" style={{animationDelay: '0.3s'}}>
           EVERfor creates cinematic interviews that preserve your loved one's voice, story, and wisdom—for generations to come.
         </p>
         
