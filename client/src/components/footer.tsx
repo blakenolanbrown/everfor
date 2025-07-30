@@ -25,9 +25,11 @@ export default function Footer({ onBookingClick }: FooterProps) {
               </div>
               <span className="font-playfair text-2xl font-semibold text-cream">EVERfor</span>
             </div>
-            <p className="text-cream/90 leading-relaxed hover:text-cream transition-colors duration-300">
-              Preserving family legacies with reverence, artistry, and the understanding that every story matters.
-            </p>
+            <div className="text-very-light-grey leading-relaxed hover:text-gold transition-colors duration-300">
+              <p>Preserving family legacies</p>
+              <p>with reverence and the understanding</p>
+              <p>that every story matters.</p>
+            </div>
           </div>
           
           {/* Quick Links */}
