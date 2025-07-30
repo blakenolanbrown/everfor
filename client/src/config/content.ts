@@ -27,7 +27,7 @@ export const siteContent = {
   // Video Gallery - Easy to update video links
   videoGallery: {
     title: "Preserving Stories, One Family at a Time",
-    subtitle: "Every conversation tells a story worth remembering. See how we help families capture these precious moments with cinematic quality and heartfelt authenticity.",
+    subtitle: "Every conversation tells a story worth remembering.|See how we help families capture these precious moments|with cinematic quality and heartfelt authenticity.",
     videos: [
       {
         id: "1",
