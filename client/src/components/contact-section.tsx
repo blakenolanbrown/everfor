@@ -187,16 +187,6 @@ export default function ContactSection() {
               
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
-                  <Phone className="text-gold h-5 w-5" />
-                </div>
-                <div>
-                  <div className="font-semibold">Phone</div>
-                  <div className="text-cream/80">(555) 123-EVER</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
                   <Clock className="text-gold h-5 w-5" />
                 </div>
                 <div>

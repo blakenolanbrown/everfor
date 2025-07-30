@@ -68,7 +68,6 @@ export default function Footer({ onBookingClick }: FooterProps) {
             <h4 className="font-semibold text-cream mb-4">Get In Touch</h4>
             <div className="space-y-2 text-very-light-grey">
               <div className="hover:text-gold transition-colors duration-300">blake@everfor.family</div>
-              <div className="hover:text-gold transition-colors duration-300">(555) 123-EVER</div>
               <div className="pt-4">
                 <Button 
                   onClick={onBookingClick}
