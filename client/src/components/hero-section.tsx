@@ -34,13 +34,12 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="font-playfair text-5xl md:text-7xl font-bold text-cream mb-6 animate-fade-in-up">
-          Every Story
-          <span className="block text-gold">Deserves Forever</span>
+          Preserve more than a memory.
+          <span className="block text-gold">Capture their presence.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-cream/90 mb-8 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-          Preserve the wisdom, love, and irreplaceable stories of your family's most precious voices 
-          before they become memories.
+          EVERfor creates cinematic interviews that preserve your loved one's voice, story, and wisdom—for generations to come.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
@@ -49,16 +48,16 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
             className="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             <Calendar className="mr-2 h-5 w-5" />
-            Schedule Your Legacy Session
+            Book a Legacy Call
           </Button>
           
           <Button 
             onClick={scrollToGallery}
             variant="outline"
-            className="border-2 border-cream text-cream font-semibold px-8 py-4 rounded-full text-lg hover:bg-cream hover:text-navy transition-all duration-300"
+            className="border-2 border-gold text-gold font-semibold px-8 py-4 rounded-full text-lg hover:bg-gold hover:text-navy transition-all duration-300"
           >
             <Play className="mr-2 h-5 w-5" />
-            Watch Our Work
+            Watch Preview
           </Button>
         </div>
       </div>

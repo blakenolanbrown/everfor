@@ -26,14 +26,14 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-md border-b border-gold/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-gold/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
               <Infinity className="text-cream text-lg" />
             </div>
-            <span className="font-playfair text-2xl font-semibold text-navy">EVERfor</span>
+            <span className="font-playfair text-2xl font-semibold text-cream">EVERfor</span>
           </div>
           
           {/* Desktop Menu */}
@@ -42,7 +42,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-navy hover:text-gold transition-colors font-medium"
+                className="text-cream hover:text-gold transition-colors font-medium"
               >
                 {item.label}
               </button>

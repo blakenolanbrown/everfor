@@ -29,10 +29,10 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
-            Stories That Touch the Heart
+            Preview Our Work
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-            Witness the power of preserved memories through our carefully crafted legacy films.
+            See how we transform intimate family conversations into cinematic treasures.
           </p>
         </div>
         

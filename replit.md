@@ -7,6 +7,9 @@ EVERfor is a professional family legacy video preservation platform that connect
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preferences: Minimalist, timeless aesthetic over heavy-handed emotional messaging.
+Content tone: Reverent and subtle rather than pushy about urgency.
+Brand positioning: High-end legacy video services with sophisticated, cinematic quality.
 
 ## System Architecture
 
