@@ -40,17 +40,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
               </p>
             </div>
             
-            <div className="mt-8 grid grid-cols-2 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-1">50+</div>
-                <div className="text-warm-gray">Families Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-1">15+</div>
-                <div className="text-warm-gray">Years Experience</div>
-              </div>
-            </div>
-            
+
             <div className="mt-8">
               <Button 
                 onClick={onBookingClick}
