@@ -48,7 +48,6 @@ const packages = [
       "Multi-location filming options",
       "60-minute documentary-style film",
       "Family history research integration",
-      "Custom score composition",
       "Luxury presentation package"
     ],
     isPopular: false
