@@ -160,10 +160,10 @@ export default function ContactSection() {
           <div className="space-y-8">
             <div>
               <h3 className="font-playfair text-2xl font-semibold mb-6">Ready to Get Started?</h3>
-              <p className="text-cream/80 leading-relaxed mb-6">
-                Time is precious, and every day we wait is another day of stories that might be lost. 
-                Let's schedule your consultation and begin preserving your family's most treasured memories.
-              </p>
+              <div className="text-cream/80 leading-relaxed mb-6">
+                <p className="mb-2">Time is precious, and every day we wait is another day of stories that might be lost.</p>
+                <p>Let's schedule your consultation and begin preserving your family's most treasured memories.</p>
+              </div>
               
               <Button 
                 onClick={openCalendly}
