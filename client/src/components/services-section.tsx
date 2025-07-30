@@ -59,7 +59,7 @@ export default function ServicesSection({ onBookingClick }: ServicesSectionProps
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
             Choose Your Legacy Package
           </h2>
           <p className="text-xl text-warm-gray max-w-3xl mx-auto">
@@ -100,7 +100,7 @@ export default function ServicesSection({ onBookingClick }: ServicesSectionProps
                     } text-xl h-6 w-6`} />
                   </div>
                   <h3 className={`font-playfair text-2xl font-bold ${
-                    isPopular ? 'text-cream' : 'text-navy'
+                    isPopular ? 'text-cream' : 'text-deep-charcoal'
                   } mb-2`}>
                     {pkg.name}
                   </h3>

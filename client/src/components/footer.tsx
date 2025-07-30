@@ -14,7 +14,7 @@ export default function Footer({ onBookingClick }: FooterProps) {
   };
 
   return (
-    <footer className="bg-navy-light border-t border-gold/20 py-12">
+    <footer className="bg-deep-charcoal border-t border-gold/20 py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -70,9 +70,9 @@ export default function Footer({ onBookingClick }: FooterProps) {
               <div className="pt-4">
                 <Button 
                   onClick={onBookingClick}
-                  className="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300"
+                  className="bg-gold text-deep-charcoal font-semibold px-6 py-3 rounded-lg hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Book Consultation
+                  Start a Conversation
                 </Button>
               </div>
             </div>

@@ -18,7 +18,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
           </div>
           
           <div>
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
               Why I Created EVERfor
             </h2>
             
@@ -34,7 +34,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
                 conversation" recorded.
               </p>
               
-              <p className="font-crimson italic text-xl text-navy">
+              <p className="font-crimson italic text-xl text-deep-charcoal">
                 "Every family has stories worth preserving. My mission is to capture them with the reverence 
                 and artistry they deserve, creating treasures that will be cherished for generations."
               </p>

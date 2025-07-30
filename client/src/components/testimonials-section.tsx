@@ -25,7 +25,7 @@ export default function TestimonialsSection({ onBookingClick }: TestimonialsSect
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
             What Families Are Saying
           </h2>
           <p className="text-xl text-warm-gray">
@@ -38,7 +38,7 @@ export default function TestimonialsSection({ onBookingClick }: TestimonialsSect
             <div key={index} className="bg-cream rounded-2xl p-8 relative">
               <div className="text-gold text-6xl font-crimson absolute top-4 left-6 opacity-30">"</div>
               <div className="pt-8">
-                <p className="text-navy text-lg leading-relaxed font-crimson italic mb-6">
+                <p className="text-deep-charcoal text-lg leading-relaxed font-crimson italic mb-6">
                   {testimonial.quote}
                 </p>
                 <div className="flex items-center">
@@ -48,7 +48,7 @@ export default function TestimonialsSection({ onBookingClick }: TestimonialsSect
                     className="w-12 h-12 rounded-full object-cover mr-4" 
                   />
                   <div>
-                    <div className="font-semibold text-navy">{testimonial.author}</div>
+                    <div className="font-semibold text-deep-charcoal">{testimonial.author}</div>
                     <div className="text-warm-gray text-sm">{testimonial.package}</div>
                   </div>
                 </div>
