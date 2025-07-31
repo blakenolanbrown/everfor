@@ -14,7 +14,7 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
             <Heart className="text-gold h-8 w-8 mr-3" />
             <Users className="text-gold h-8 w-8" />
           </div>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream mb-6">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6">
             Special Couples Pricing
           </h2>
           <p className="text-xl text-cream/90 max-w-3xl mx-auto">
@@ -38,20 +38,20 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
                 Jack & Nita's Legacy Sessions
               </h3>
               
-              <p className="text-cream/90 leading-relaxed mb-6">
-                This wonderful couple each wanted their individual stories captured. Since we were already there with equipment set up, we could offer them both sessions efficiently.
+              <p className="text-white/95 leading-relaxed mb-6">
+                This wonderful couple each wanted their individual stories captured. We save significant production expense by filming back to back sessions; a 25% value!
               </p>
               
               <div className="space-y-3 mb-8">
-                <div className="flex items-center text-cream/90">
+                <div className="flex items-center text-white/95">
                   <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
                   <span>Two complete individual legacy sessions</span>
                 </div>
-                <div className="flex items-center text-cream/90">
+                <div className="flex items-center text-white/95">
                   <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
                   <span>Professional setup for both conversations</span>
                 </div>
-                <div className="flex items-center text-cream/90">
+                <div className="flex items-center text-white/95">
                   <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
                   <span>Two separate edited legacy films</span>
                 </div>
