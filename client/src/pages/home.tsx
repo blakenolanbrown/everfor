@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import VideoGallery from "@/components/video-gallery";
+import CouplesPricingSection from "@/components/couples-pricing-section";
 import ServicesSection from "@/components/services-section";
 import AboutSection from "@/components/about-section";
 import TestimonialsSection from "@/components/testimonials-section";
@@ -94,6 +95,7 @@ export default function Home() {
       </section>
 
       <VideoGallery onVideoClick={openVideoModal} />
+      <CouplesPricingSection onBookingClick={openBookingModal} />
       <ServicesSection onBookingClick={openBookingModal} />
       <AboutSection onBookingClick={openBookingModal} />
       <TestimonialsSection onBookingClick={openBookingModal} />
