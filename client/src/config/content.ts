@@ -6,7 +6,7 @@ export const siteContent = {
   hero: {
     title: "Their stories deserve",
     titleHighlight: "to live forever.",
-    subtitle: "Gentle, reverent conversations that become timeless keepsakes.|Preserve the voices and wisdom of those you cherish most.",
+    subtitle: "Reverent conversations that become timeless keepsakes.|Preserve the voices and wisdom of those you cherish most.",
     primaryButtonText: "Book a Legacy Session",
     secondaryButtonText: "See Our Work"
   },
