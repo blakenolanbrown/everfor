@@ -25,11 +25,11 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
         
         {/* Featured Video */}
         <div className="mb-12">
-          <div className="relative bg-navy rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+          <div className="relative group bg-navy rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto cursor-pointer" onClick={() => onVideoClick("featured")}>
             <div className="aspect-video bg-gradient-to-br from-navy to-deep-charcoal flex items-center justify-center relative">
-              <Play className="text-gold h-20 w-20 hover:scale-110 transition-transform duration-300 cursor-pointer" 
-                    onClick={() => onVideoClick("featured")} />
-              <div className="absolute inset-0 bg-black/20 hover:bg-black/40 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                <Play className="text-gold h-20 w-20 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+              </div>
             </div>
             <div className="p-8">
               <h3 className="font-playfair text-2xl font-semibold text-cream mb-3">
@@ -52,10 +52,10 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
             >
               <div className="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video relative">
-                  <div className="w-full h-full bg-gradient-to-br from-navy to-deep-charcoal flex items-center justify-center">
-                    <Play className="text-gold h-12 w-12 group-hover:scale-110 transition-transform duration-300" />
+                  <div className="w-full h-full bg-gradient-to-br from-navy to-deep-charcoal"></div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                    <Play className="text-gold h-12 w-12 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
                   </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
                   <div className="absolute bottom-2 right-2 bg-black/60 text-white px-2 py-1 rounded text-xs flex items-center">
                     <Clock className="w-3 h-3 mr-1" />
                     {video.duration}
