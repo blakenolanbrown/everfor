@@ -46,8 +46,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
                 "Stories of a Lifetime" - Featured Legacy Film
               </h3>
               <p className="text-cream leading-relaxed">
-                Experience how we transform intimate family conversations into treasures 
-                that will be cherished for generations.
+                Experience how we transform intimate family conversations into cherished treasures for generations.
               </p>
             </div>
           </div>
