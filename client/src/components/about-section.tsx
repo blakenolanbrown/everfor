@@ -22,22 +22,21 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
               Why I Created EVERfor
             </h2>
             
-            <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
-              <p>
-                After losing my grandmother without capturing her incredible stories, I realized how many 
-                precious memories disappear forever when our loved ones pass away. That moment changed everything.
-              </p>
+            <div className="space-y-4 text-lg text-warm-gray leading-relaxed">
+              <p>I lost my grandmother before I ever thought to record her voice.</p>
+              <p>Not just her stories—her presence.</p>
+              <p>And when she was gone, there was no going back.</p>
               
-              <p>
-                EVERfor was born from this deeply personal experience. I've dedicated my career to ensuring 
-                other families don't face the same regret—that feeling of wishing you had "just one more 
-                conversation" recorded.
-              </p>
+              <p className="pt-2">EVERfor was born from that silence.</p>
               
-              <p className="font-crimson italic text-xl text-deep-charcoal">
-                "Every family has stories worth preserving. My mission is to capture them with the reverence 
-                and artistry they deserve, creating treasures that will be cherished for generations."
-              </p>
+              <p className="pt-2">This isn't nostalgia. This is preservation.</p>
+              <p>This is legacy, captured while it still breathes.</p>
+              <p>One story at a time, filmed with intention, clarity, and care.</p>
+              
+              <p className="pt-2">I don't make tribute videos.</p>
+              <p>I create heirlooms that speak—for decades.</p>
+              <p>So the people we love don't vanish into memory.</p>
+              <p className="font-semibold text-deep-charcoal">They stay.</p>
             </div>
             
 
