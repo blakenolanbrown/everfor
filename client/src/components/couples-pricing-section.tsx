@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Users, Star } from "lucide-react";
+import { Heart, Users, Play } from "lucide-react";
 
 interface CouplesPricingSectionProps {
   onBookingClick: () => void;
 }
 
 export default function CouplesPricingSection({ onBookingClick }: CouplesPricingSectionProps) {
+  const openVideo = (videoId: string) => {
+    window.open(`https://www.youtube.com/watch?v=${videoId}`, "_blank");
+  };
+
   return (
     <section className="py-16 bg-gradient-to-br from-navy to-deep-charcoal">
       <div className="max-w-6xl mx-auto px-6">
@@ -22,18 +26,43 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
           </p>
         </div>
 
-        <div className="bg-navy-light rounded-3xl p-8 md:p-12 border border-gold/20 relative overflow-hidden">
+        {/* Side by side videos */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Jack's Video */}
+          <div className="relative group cursor-pointer" onClick={() => openVideo("NnHhKdlBIgU")}>
+            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-charcoal opacity-90"></div>
+              <Play className="text-gold h-16 w-16 group-hover:scale-110 transition-transform duration-300 relative z-10" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+            </div>
+            <div className="text-center mt-4">
+              <h3 className="font-playfair text-2xl font-bold text-white mb-2">Jack's Legacy Session</h3>
+              <p className="text-cream/80">Essential Package • 45 minutes</p>
+            </div>
+          </div>
+
+          {/* Nita's Video */}
+          <div className="relative group cursor-pointer" onClick={() => openVideo("9IqGHTCIJvs")}>
+            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-charcoal opacity-90"></div>
+              <Play className="text-gold h-16 w-16 group-hover:scale-110 transition-transform duration-300 relative z-10" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+            </div>
+            <div className="text-center mt-4">
+              <h3 className="font-playfair text-2xl font-bold text-white mb-2">Nita's Legacy Session</h3>
+              <p className="text-cream/80">Essential Package • 45 minutes</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Pricing Card */}
+        <div className="bg-navy-light rounded-3xl p-8 md:p-12 border border-gold/20 relative overflow-hidden max-w-4xl mx-auto">
           {/* Decorative background */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-full -translate-y-16 translate-x-16"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gold/10 rounded-full translate-y-12 -translate-x-12"></div>
           
           <div className="relative grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="flex items-center mb-6">
-                <Star className="text-gold h-6 w-6 mr-2" />
-                <span className="text-gold font-semibold text-lg">Perfect Example</span>
-              </div>
-              
               <h3 className="font-playfair text-3xl font-bold text-cream mb-4">
                 Jack & Nita's Legacy Sessions
               </h3>

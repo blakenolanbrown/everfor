@@ -95,8 +95,8 @@ export default function Home() {
       </section>
 
       <VideoGallery onVideoClick={openVideoModal} />
-      <CouplesPricingSection onBookingClick={openBookingModal} />
       <ServicesSection onBookingClick={openBookingModal} />
+      <CouplesPricingSection onBookingClick={openBookingModal} />
       <AboutSection onBookingClick={openBookingModal} />
       <TestimonialsSection onBookingClick={openBookingModal} />
       <ContactSection />
