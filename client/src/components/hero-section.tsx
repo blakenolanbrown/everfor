@@ -26,7 +26,7 @@ export default function HeroSection({ onBookingClick, onVideoClick }: HeroSectio
       </div>
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <h1 className="font-playfair text-4xl md:text-6xl font-normal text-soft-beige mb-8 animate-fade-in-up leading-relaxed">
+        <h1 className="font-cormorant text-4xl md:text-6xl font-normal text-soft-beige mb-8 animate-fade-in-up leading-relaxed">
           {hero.title}
           <span className="block text-gold font-medium">{hero.titleHighlight}</span>
         </h1>
