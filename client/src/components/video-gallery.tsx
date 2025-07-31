@@ -26,20 +26,10 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
         {/* Featured Video */}
         <div className="mb-12">
           <div className="relative bg-navy rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
-            <div className="aspect-video bg-navy flex items-center justify-center relative">
-              <img 
-                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&h=900" 
-                alt="Elderly man sharing stories with family" 
-                className="w-full h-full object-cover opacity-80" 
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Button 
-                  onClick={() => onVideoClick("featured")}
-                  className="w-20 h-20 bg-gold/90 rounded-full flex items-center justify-center hover:bg-gold hover:scale-110 transition-all duration-300 p-0"
-                >
-                  <Play className="text-navy text-2xl ml-1 h-8 w-8" />
-                </Button>
-              </div>
+            <div className="aspect-video bg-gradient-to-br from-navy to-deep-charcoal flex items-center justify-center relative">
+              <Play className="text-gold h-20 w-20 hover:scale-110 transition-transform duration-300 cursor-pointer" 
+                    onClick={() => onVideoClick("featured")} />
+              <div className="absolute inset-0 bg-black/20 hover:bg-black/40 transition-colors duration-300"></div>
             </div>
             <div className="p-8">
               <h3 className="font-playfair text-2xl font-semibold text-cream mb-3">
