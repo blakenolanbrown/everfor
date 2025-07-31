@@ -63,24 +63,18 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
             >
               <div className="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video relative">
-                  <img 
-                    src={video.thumbnailUrl} 
-                    alt={video.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                  />
-                  <div className="absolute inset-0 bg-navy/40 group-hover:bg-navy/20 transition-colors duration-300 flex items-center justify-center">
-                    <div className="w-12 h-12 bg-gold/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Play className="text-navy ml-1 h-5 w-5" />
-                    </div>
+                  <div className="w-full h-full bg-gradient-to-br from-navy to-deep-charcoal flex items-center justify-center">
+                    <Play className="text-gold h-12 w-12 group-hover:scale-110 transition-transform duration-300" />
                   </div>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
                   <div className="absolute bottom-2 right-2 bg-black/60 text-white px-2 py-1 rounded text-xs flex items-center">
                     <Clock className="w-3 h-3 mr-1" />
                     {video.duration}
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-cream text-sm mb-1">{video.title}</h4>
-                  <p className="text-very-light-grey text-xs">{video.description}</p>
+                  <h4 className="font-playfair text-lg font-bold text-navy mb-1">{video.title}</h4>
+                  <p className="text-white text-sm">{video.description}</p>
                 </div>
               </div>
             </div>

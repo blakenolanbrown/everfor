@@ -31,25 +31,25 @@ export const siteContent = {
     videos: [
       {
         id: "1",
-        title: "Sarah's Story",
-        description: "A grandmother shares decades of wisdom",
-        thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg", // YouTube thumbnail
+        title: "Sarah Elizabeth Mitchell",
+        description: "Premium",
+        thumbnailUrl: "", // Will use placeholder design
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
         duration: "12:34"
       },
       {
         id: "2", 
-        title: "The Johnson Legacy",
-        description: "Three generations, one beautiful story",
-        thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+        title: "Robert William Johnson",
+        description: "Essential",
+        thumbnailUrl: "", // Will use placeholder design
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
         duration: "8:22"
       },
       {
         id: "3",
-        title: "Love Letters Read Aloud", 
-        description: "A couple revisits 50 years of correspondence",
-        thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+        title: "Margaret Rose Thompson", 
+        description: "Elite",
+        thumbnailUrl: "", // Will use placeholder design
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
         duration: "15:45"
       }
