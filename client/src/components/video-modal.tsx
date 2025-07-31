@@ -71,7 +71,7 @@ export default function VideoModal({ isOpen, onClose, videoId }: VideoModalProps
           </div>
           
           <div className="p-8">
-            <h3 className="font-playfair text-2xl font-semibold text-cream mb-3">
+            <h3 className="font-cormorant text-2xl font-semibold text-cream mb-3">
               {video.title}
             </h3>
             <p className="text-cream/80 leading-relaxed">

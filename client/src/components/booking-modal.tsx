@@ -27,7 +27,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-md bg-cream">
         <DialogHeader>
-          <DialogTitle className="font-playfair text-2xl text-navy text-center">
+          <DialogTitle className="font-cormorant text-2xl text-navy text-center">
             Schedule Your Consultation
           </DialogTitle>
         </DialogHeader>

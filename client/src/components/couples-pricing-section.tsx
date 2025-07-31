@@ -18,7 +18,7 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
             <Heart className="text-gold h-8 w-8 mr-3" />
             <Users className="text-gold h-8 w-8" />
           </div>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-white mb-6">
             Special Couples Pricing
           </h2>
           <p className="text-xl text-cream/90 max-w-3xl mx-auto">
@@ -41,7 +41,7 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
               </div>
             </div>
             <div className="text-center mt-4">
-              <h3 className="font-playfair text-2xl font-bold text-navy mb-2">Jack Earl Chartier</h3>
+              <h3 className="font-cormorant text-2xl font-bold text-navy mb-2">Jack Earl Chartier</h3>
               <p className="text-white">Essential</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
               </div>
             </div>
             <div className="text-center mt-4">
-              <h3 className="font-playfair text-2xl font-bold text-navy mb-2">Nita Fern Chartier</h3>
+              <h3 className="font-cormorant text-2xl font-bold text-navy mb-2">Nita Fern Chartier</h3>
               <p className="text-white">Essential</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
           
           <div className="relative grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="font-playfair text-3xl font-bold text-cream mb-4">
+              <h3 className="font-cormorant text-3xl font-bold text-cream mb-4">
                 Jack & Nita's Legacy Sessions
               </h3>
               

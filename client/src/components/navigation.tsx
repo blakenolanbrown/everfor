@@ -29,7 +29,7 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
             <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
               <Infinity className="text-cream text-lg" />
             </div>
-            <span className="font-playfair text-2xl font-medium text-soft-beige">{navigation.brandName}</span>
+            <span className="font-cormorant text-2xl font-medium text-soft-beige">{navigation.brandName}</span>
           </div>
           
           {/* Desktop Menu */}

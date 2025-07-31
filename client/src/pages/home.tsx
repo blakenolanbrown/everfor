@@ -38,7 +38,7 @@ export default function Home() {
       <section className="py-20 bg-cream/50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-medium text-deep-charcoal mb-8">
+            <h2 className="font-cormorant text-3xl md:text-4xl font-medium text-deep-charcoal mb-8">
               A legacy you can see, hear, and feel.
             </h2>
             <div className="text-lg text-warm-gray max-w-3xl mx-auto leading-relaxed space-y-3">
@@ -55,7 +55,7 @@ export default function Home() {
       <section className="py-20 bg-white/70">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-medium text-deep-charcoal mb-8">
+            <h2 className="font-cormorant text-3xl md:text-4xl font-medium text-deep-charcoal mb-8">
               How It Works
             </h2>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Calendar className="text-gold text-2xl h-8 w-8" />
               </div>
-              <h3 className="font-playfair text-2xl font-semibold text-deep-charcoal mb-4">Schedule</h3>
+              <h3 className="font-cormorant text-2xl font-semibold text-deep-charcoal mb-4">Schedule</h3>
               <p className="text-warm-gray leading-relaxed">
                 A simple call to understand your family's needs
               </p>
@@ -75,7 +75,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Video className="text-gold text-2xl h-8 w-8" />
               </div>
-              <h3 className="font-playfair text-2xl font-semibold text-deep-charcoal mb-4">Film</h3>
+              <h3 className="font-cormorant text-2xl font-semibold text-deep-charcoal mb-4">Film</h3>
               <p className="text-warm-gray leading-relaxed">
                 We interview and film with reverent, cinematic care
               </p>
@@ -85,7 +85,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Heart className="text-gold text-2xl h-8 w-8" />
               </div>
-              <h3 className="font-playfair text-2xl font-semibold text-deep-charcoal mb-4">Deliver</h3>
+              <h3 className="font-cormorant text-2xl font-semibold text-deep-charcoal mb-4">Deliver</h3>
               <p className="text-warm-gray leading-relaxed">
                 You receive a beautifully edited heirloom to share for generations
               </p>

@@ -18,7 +18,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
           </div>
           
           <div>
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
+            <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
               Why I Created EVERfor
             </h2>
             

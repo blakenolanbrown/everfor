@@ -23,7 +23,7 @@ export default function Footer({ onBookingClick }: FooterProps) {
               <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
                 <Infinity className="text-cream text-lg h-5 w-5" />
               </div>
-              <span className="font-playfair text-2xl font-semibold text-cream">EVERfor</span>
+              <span className="font-cormorant text-2xl font-semibold text-cream">EVERfor</span>
             </div>
             <div className="text-very-light-grey leading-relaxed hover:text-gold transition-colors duration-300">
               <p>Preserving family legacies</p>

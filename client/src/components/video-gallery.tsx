@@ -13,7 +13,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
     <section id="gallery" className="py-20 bg-gradient-to-br from-cream to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-navy mb-6">
             {videoGallery.title}
           </h2>
           <div className="text-xl text-warm-gray max-w-3xl mx-auto text-center">
@@ -32,7 +32,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
               </div>
             </div>
             <div className="p-8">
-              <h3 className="font-playfair text-2xl font-semibold text-cream mb-3">
+              <h3 className="font-cormorant text-2xl font-semibold text-cream mb-3">
                 EVERfor them. EVERfor you.
               </h3>
               <p className="text-cream leading-relaxed">
@@ -62,7 +62,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-playfair text-lg font-bold text-navy mb-1">{video.title}</h4>
+                  <h4 className="font-cormorant text-lg font-bold text-navy mb-1">{video.title}</h4>
                   <p className="text-white text-sm">{video.description}</p>
                 </div>
               </div>

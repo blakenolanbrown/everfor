@@ -67,7 +67,7 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-navy text-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-bold mb-6">
             Let's Begin Your Legacy
           </h2>
           <div className="text-xl text-cream/80 max-w-3xl mx-auto text-center">
@@ -79,7 +79,7 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-navy-light rounded-2xl p-8">
-            <h3 className="font-playfair text-2xl font-semibold mb-6">Get In Touch</h3>
+            <h3 className="font-cormorant text-2xl font-semibold mb-6">Get In Touch</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -158,7 +158,7 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="font-playfair text-2xl font-semibold mb-6">Ready to Get Started?</h3>
+              <h3 className="font-cormorant text-2xl font-semibold mb-6">Ready to Get Started?</h3>
               <div className="text-cream/80 leading-relaxed mb-6">
                 <p className="mb-2">Time is precious, and every day we wait is another day of stories that might be lost.</p>
                 <p>Let's schedule your consultation and begin preserving your family's most treasured memories.</p>
