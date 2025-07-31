@@ -32,7 +32,7 @@ export const siteContent = {
       {
         id: "1",
         title: "Sarah Elizabeth Mitchell",
-        description: "Premium",
+        description: "Signature",
         thumbnailUrl: "", // Will use placeholder design
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
         duration: "12:34"
@@ -48,7 +48,7 @@ export const siteContent = {
       {
         id: "3",
         title: "Margaret Rose Thompson", 
-        description: "Elite",
+        description: "Eternal",
         thumbnailUrl: "", // Will use placeholder design
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
         duration: "15:45"
@@ -82,7 +82,7 @@ export const siteContent = {
         ]
       },
       {
-        name: "Premium", 
+        name: "Signature", 
         price: "$10,000",
         duration: "Full-day experience",
         features: [
@@ -95,7 +95,7 @@ export const siteContent = {
         ]
       },
       {
-        name: "Elite",
+        name: "Eternal",
         price: "$20,000", 
         duration: "Multi-day storytelling",
         features: [

@@ -2,7 +2,7 @@
 
 ## Overview
 
-EVERfor is a professional family legacy video preservation platform that connects families with videography services to capture and preserve precious family stories before they're lost forever. The application is built as a modern single-page web application with a focus on emotional storytelling and premium service offerings.
+EVERfor is a professional family legacy video preservation platform that connects families with videography services to capture and preserve precious family stories before they're lost forever. The application is built as a modern single-page web application with a focus on emotional storytelling and premium service offerings. Services are offered in three tiers: Essential ($5K), Signature ($10K), and Eternal ($20K).
 
 ## User Preferences
 
