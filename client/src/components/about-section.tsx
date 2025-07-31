@@ -38,16 +38,6 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
               <p>So the people we love don't vanish into memory.</p>
               <p className="font-semibold text-deep-charcoal">They stay.</p>
             </div>
-            
-
-            <div className="mt-8">
-              <Button 
-                onClick={onBookingClick}
-                className="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full hover:shadow-lg transition-all duration-300"
-              >
-                Learn More About My Journey
-              </Button>
-            </div>
           </div>
         </div>
       </div>
