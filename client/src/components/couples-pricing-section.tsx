@@ -6,8 +6,8 @@ interface CouplesPricingSectionProps {
 }
 
 export default function CouplesPricingSection({ onBookingClick }: CouplesPricingSectionProps) {
-  const openVideo = (videoId: string) => {
-    window.open(`https://www.youtube.com/watch?v=${videoId}`, "_blank");
+  const openVideo = (url: string) => {
+    window.open(url, "_blank");
   };
 
   return (
@@ -29,11 +29,16 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
         {/* Side by side videos */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Jack's Video */}
-          <div className="relative group cursor-pointer" onClick={() => openVideo("NnHhKdlBIgU")}>
-            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-charcoal opacity-90"></div>
-              <Play className="text-gold h-16 w-16 group-hover:scale-110 transition-transform duration-300 relative z-10" />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+          <div className="relative group cursor-pointer" onClick={() => openVideo("https://youtu.be/z_CqH720zZQ")}>
+            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 relative overflow-hidden">
+              <img 
+                src="https://img.youtube.com/vi/z_CqH720zZQ/maxresdefault.jpg" 
+                alt="Jack Earl Chartier Legacy Session" 
+                className="w-full h-full object-cover" 
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                <Play className="text-gold h-16 w-16 group-hover:scale-110 transition-transform duration-300" />
+              </div>
             </div>
             <div className="text-center mt-4">
               <h3 className="font-playfair text-2xl font-bold text-navy mb-2">Jack Earl Chartier</h3>
@@ -42,11 +47,16 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
           </div>
 
           {/* Nita's Video */}
-          <div className="relative group cursor-pointer" onClick={() => openVideo("9IqGHTCIJvs")}>
-            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-navy to-deep-charcoal opacity-90"></div>
-              <Play className="text-gold h-16 w-16 group-hover:scale-110 transition-transform duration-300 relative z-10" />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+          <div className="relative group cursor-pointer" onClick={() => openVideo("https://youtu.be/vNCN5kdD76k")}>
+            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 relative overflow-hidden">
+              <img 
+                src="https://img.youtube.com/vi/vNCN5kdD76k/maxresdefault.jpg" 
+                alt="Nita Fern Chartier Legacy Session" 
+                className="w-full h-full object-cover" 
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                <Play className="text-gold h-16 w-16 group-hover:scale-110 transition-transform duration-300" />
+              </div>
             </div>
             <div className="text-center mt-4">
               <h3 className="font-playfair text-2xl font-bold text-navy mb-2">Nita Fern Chartier</h3>

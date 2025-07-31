@@ -94,6 +94,17 @@ The architecture supports easy scaling from development to production while main
 
 ## Recent Changes
 
+**July 31, 2025 - Video Integration & Content Refinement**
+- ✓ Integrated live Calendly booking system with real URL (blakenolanbrown/legacy-video-discovery-call)
+- ✓ Added couples pricing section with 25% discount ($7,500 for two Essential sessions)
+- ✓ Connected Jack & Nita's actual YouTube videos with authentic thumbnails
+- ✓ Updated package naming: Essential/Premium/Elite → Essential/Signature/Eternal
+- ✓ Rewrote "Why I Created EVERfor" with powerful, personal narrative about grandmother's loss
+- ✓ Implemented consistent placeholder design across all video elements
+- ✓ Refined messaging: "EVERfor them. EVERfor you." and removed "cinematic" references
+- ✓ Enhanced text contrast in couples pricing section for better readability
+- ✓ Positioned couples pricing strategically after main service packages for maximum impact
+
 **July 30, 2025 - Website Redesign & Content Management**
 - ✓ Transformed from bright/aggressive design to calming, sophisticated dark color scheme
 - ✓ Implemented muted color palette (deep charcoal, navy, gold accents) for welcoming atmosphere  
@@ -109,4 +120,3 @@ The architecture supports easy scaling from development to production while main
 - ✓ Fixed footer text readability with proper light grey colors
 - ✓ Refined footer tagline to focus on essence over artistry
 - ✓ Optimized video gallery subtitle formatting for better visual flow
-- ✓ Website ready for launch - booking system integration pending Calendly setup
