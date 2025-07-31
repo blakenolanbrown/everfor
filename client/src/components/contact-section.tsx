@@ -60,8 +60,7 @@ export default function ContactSection() {
   };
 
   const openCalendly = () => {
-    // TODO: Integrate with actual Calendly URL
-    window.open("https://calendly.com/everfor-family", "_blank");
+    window.open("https://calendly.com/blakenolanbrown/legacy-video-discovery-call", "_blank");
   };
 
   return (

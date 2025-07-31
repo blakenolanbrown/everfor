@@ -9,8 +9,7 @@ interface BookingModalProps {
 
 export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const openCalendly = () => {
-    // TODO: Replace with actual Calendly URL
-    window.open("https://calendly.com/everfor-family", "_blank");
+    window.open("https://calendly.com/blakenolanbrown/legacy-video-discovery-call", "_blank");
     onClose();
   };
 
