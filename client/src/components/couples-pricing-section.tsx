@@ -36,8 +36,8 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
             </div>
             <div className="text-center mt-4">
-              <h3 className="font-playfair text-2xl font-bold text-white mb-2">Jack's Legacy Session</h3>
-              <p className="text-cream/80">Essential Package • 45 minutes</p>
+              <h3 className="font-playfair text-2xl font-bold text-white mb-2">Jack Earl Chartier</h3>
+              <p className="text-cream/80">Essential</p>
             </div>
           </div>
 
@@ -49,8 +49,8 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
             </div>
             <div className="text-center mt-4">
-              <h3 className="font-playfair text-2xl font-bold text-white mb-2">Nita's Legacy Session</h3>
-              <p className="text-cream/80">Essential Package • 45 minutes</p>
+              <h3 className="font-playfair text-2xl font-bold text-white mb-2">Nita Fern Chartier</h3>
+              <p className="text-cream/80">Essential</p>
             </div>
           </div>
         </div>
