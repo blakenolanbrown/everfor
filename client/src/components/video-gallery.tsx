@@ -43,7 +43,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
             </div>
             <div className="p-8">
               <h3 className="font-playfair text-2xl font-semibold text-cream mb-3">
-                "Stories of a Lifetime" - Featured Legacy Film
+                EVERfor them. EVERfor you.
               </h3>
               <p className="text-cream leading-relaxed">
                 Experience how we transform intimate family conversations into cherished treasures for generations.
