@@ -11,8 +11,8 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-              alt="Professional videographer portrait" 
+              src="/attached_assets/20181225_120834_1754059406971.jpg" 
+              alt="Blake with his grandmother - the inspiration behind EVERfor" 
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto" 
             />
           </div>
