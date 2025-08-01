@@ -109,7 +109,7 @@ export default function ServicesSection({ onBookingClick }: ServicesSectionProps
                     {pkg.price}
                   </div>
                   <p className={`${
-                    isPopular ? 'text-cream/95' : 'text-warm-gray'
+                    isPopular ? 'text-gold-light' : 'text-warm-gray'
                   }`}>
                     {pkg.description}
                   </p>
