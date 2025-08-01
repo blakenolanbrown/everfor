@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import grandmaPhoto from "@assets/20181225_120834_1754059406971.jpg";
 
 interface AboutSectionProps {
   onBookingClick: () => void;
@@ -11,7 +12,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="/attached_assets/20181225_120834_1754059406971.jpg" 
+              src={grandmaPhoto} 
               alt="Blake with his grandmother - the inspiration behind EVERfor" 
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto" 
             />
