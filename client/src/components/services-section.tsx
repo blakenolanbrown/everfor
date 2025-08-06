@@ -22,8 +22,8 @@ const packages = [
     isPopular: false
   },
   {
-    id: "premium",
-    name: "Premium",
+    id: "signature",
+    name: "Signature",
     price: "$10,000",
     description: "Comprehensive storytelling experience",
     icon: Crown,
@@ -38,8 +38,8 @@ const packages = [
     isPopular: true
   },
   {
-    id: "elite",
-    name: "Elite",
+    id: "eternal",
+    name: "Eternal",
     price: "$20,000",
     description: "The ultimate legacy preservation",
     icon: Star,
