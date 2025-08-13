@@ -18,7 +18,7 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
             <Heart className="text-gold h-8 w-8 mr-3" />
             <Users className="text-gold h-8 w-8" />
           </div>
-          <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-gold-light mb-6">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-deep-charcoal mb-6">
             Special Couples Pricing
           </h2>
           <p className="text-xl text-cream/90 max-w-3xl mx-auto">
