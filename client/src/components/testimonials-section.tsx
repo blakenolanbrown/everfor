@@ -13,9 +13,9 @@ const testimonials = [
     image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
   },
   {
-    quote: "The way Blake captured Mom's stories was magical. She felt so comfortable sharing things she'd never told us before. The final film moves me to tears every time—it's pure artistry combined with deep respect for her legacy.",
-    author: "Michael R.",
-    package: "Elite Package Client",
+    quote: "EVERfor...you have forEVER made some very precious moments, and stories, alive for me and my family! I had no idea how grateful I am to have these videos made...they are priceless now...but will be true treasures in the future. Thank you so much for your insight on the impact these will be to our family now, and forever.",
+    author: "Julie Chartier Brown",
+    package: "Essential Package Client",
     image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
   }
 ];
