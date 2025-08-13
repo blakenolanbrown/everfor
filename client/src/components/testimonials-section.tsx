@@ -15,7 +15,7 @@ const testimonials = [
   {
     quote: "EVERfor...you have forEVER made some very precious moments, and stories, alive for me and my family! I had no idea how grateful I am to have these videos made...they are priceless now...but will be true treasures in the future. Thank you so much for your insight on the impact these will be to our family now, and forever.",
     author: "Julie Chartier Brown",
-    package: "Essential Package Client",
+    package: "",
     image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
   }
 ];
