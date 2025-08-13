@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertLeadSchema } from "@shared/schema";
 import { z } from "zod";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
@@ -42,6 +43,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message: "Failed to fetch leads" 
       });
     }
+  });
+
+  // Serve coming soon page for preview
+  app.get("/coming-soon", (req, res) => {
+    res.sendFile(path.join(process.cwd(), "coming-soon.html"));
   });
 
   const httpServer = createServer(app);
