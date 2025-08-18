@@ -30,28 +30,28 @@ export const siteContent = {
     subtitle: "Every conversation tells a story worth remembering.|See how we help families capture these precious moments|with cinematic quality and heartfelt authenticity.",
     videos: [
       {
-        id: "1",
-        title: "Sarah Elizabeth Mitchell",
-        description: "Signature",
+        id: "essential",
+        title: "Essential Legacy Session",
+        description: "Our foundational package captures the essence of your family's story",
         thumbnailUrl: "", // Will use placeholder design
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
-        duration: "12:34"
+        videoUrl: "", // Your Essential intro video
+        duration: "3:45"
       },
       {
-        id: "2", 
-        title: "Robert William Johnson",
-        description: "Essential",
+        id: "signature", 
+        title: "Signature Legacy Experience",
+        description: "An elevated experience with extended storytelling",
         thumbnailUrl: "", // Will use placeholder design
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
-        duration: "8:22"
+        videoUrl: "", // Your Signature intro video
+        duration: "4:20"
       },
       {
-        id: "3",
-        title: "Margaret Rose Thompson", 
-        description: "Eternal",
+        id: "eternal",
+        title: "Eternal Legacy Collection", 
+        description: "Our most comprehensive family archive offering",
         thumbnailUrl: "", // Will use placeholder design
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with your YouTube video ID
-        duration: "15:45"
+        videoUrl: "", // Your Eternal intro video
+        duration: "5:15"
       }
     ]
   },
