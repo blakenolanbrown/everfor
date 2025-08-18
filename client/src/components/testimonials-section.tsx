@@ -7,9 +7,9 @@ interface TestimonialsSectionProps {
 
 const testimonials = [
   {
-    quote: "We almost waited too long. Dad passed just three months after we filmed his stories with EVERfor. Now we have his voice, his laughter, and his wisdom preserved forever. This is the most precious gift our family has ever received.",
-    author: "Sarah M.",
-    package: "Premium Package Client",
+    quote: "EVERfor beautifully captured many moments of laughter, family history, love, wisdom, and memories that I will cherish and watch over and over for the rest of my life. His ability to choose the right questions for my parents was exceptional. Hearing their words of wisdom, advice, and family pride in their voices is priceless. I will always treasure these videos.",
+    author: "Jodi Burch",
+    package: "EVERfor Client",
     image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
   },
   {
