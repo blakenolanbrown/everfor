@@ -17,26 +17,26 @@ const videoData = {
     thumbnail: "https://img.youtube.com/vi/lqMzsYgysL4/maxresdefault.jpg",
     isHosted: true
   },
-  wisdom: {
-    title: "The Wisdom of Generations",
-    description: "A heartwarming conversation between grandmother and granddaughter, preserving decades of life lessons.",
-    videoUrl: "",
+  essential: {
+    title: "Essential Legacy Session",
+    description: "Our foundational package captures the essence of your family's story with professional quality and heartfelt conversations.",
+    videoUrl: "/public-objects/videos/essential-intro.mp4",
     thumbnail: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450",
-    isHosted: false
+    isHosted: true
   },
-  traditions: {
-    title: "Family Traditions Live On",
-    description: "A multi-generational family sharing their traditions and values around the dinner table.",
-    videoUrl: "",
+  signature: {
+    title: "Signature Legacy Experience",
+    description: "An elevated experience with extended storytelling and premium production to preserve your family's most precious memories.",
+    videoUrl: "/public-objects/videos/signature-intro.mp4",
     thumbnail: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450",
-    isHosted: false
+    isHosted: true
   },
-  "love-story": {
-    title: "A Love Story Remembered",
-    description: "An elderly couple reminiscing about their decades-long love story and the lessons they've learned.",
-    videoUrl: "",
+  eternal: {
+    title: "Eternal Legacy Collection",
+    description: "Our most comprehensive offering, creating a complete family archive with multi-generational storytelling and cinematic production.",
+    videoUrl: "/public-objects/videos/eternal-intro.mp4",
     thumbnail: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450",
-    isHosted: false
+    isHosted: true
   }
 };
 
