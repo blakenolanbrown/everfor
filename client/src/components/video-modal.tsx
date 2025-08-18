@@ -10,23 +10,27 @@ interface VideoModalProps {
 
 const videoData = {
   featured: {
-    title: "Stories of a Lifetime - Featured Legacy Film",
+    title: "EVERfor them. EVERfor you.",
     description: "Experience how we transform intimate family conversations into cinematic treasures that will be cherished for generations.",
-    thumbnail: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&h=900"
+    videoUrl: "https://www.youtube.com/embed/lqMzsYgysL4",
+    thumbnail: "https://img.youtube.com/vi/lqMzsYgysL4/maxresdefault.jpg"
   },
   wisdom: {
     title: "The Wisdom of Generations",
     description: "A heartwarming conversation between grandmother and granddaughter, preserving decades of life lessons.",
+    videoUrl: "",
     thumbnail: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
   },
   traditions: {
     title: "Family Traditions Live On",
     description: "A multi-generational family sharing their traditions and values around the dinner table.",
+    videoUrl: "",
     thumbnail: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
   },
   "love-story": {
     title: "A Love Story Remembered",
     description: "An elderly couple reminiscing about their decades-long love story and the lessons they've learned.",
+    videoUrl: "",
     thumbnail: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450"
   }
 };
@@ -37,8 +41,12 @@ export default function VideoModal({ isOpen, onClose, videoId }: VideoModalProps
   if (!video) return null;
 
   const playVideo = () => {
-    // TODO: Integrate with actual video player (React Player, Vimeo, YouTube, etc.)
-    alert(`Playing: ${video.title}\n\nThis would integrate with your video hosting platform (Vimeo, YouTube, or custom video player).`);
+    if (video.videoUrl) {
+      window.open(video.videoUrl.replace('/embed/', '/watch?v='), '_blank');
+    } else {
+      // Fallback for videos without URLs
+      alert(`This video is coming soon: ${video.title}`);
+    }
   };
 
   return (

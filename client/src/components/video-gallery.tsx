@@ -26,7 +26,12 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
         {/* Featured Video */}
         <div className="mb-12">
           <div className="relative group bg-navy rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto cursor-pointer" onClick={() => onVideoClick("featured")}>
-            <div className="aspect-video bg-gradient-to-br from-navy to-deep-charcoal flex items-center justify-center relative">
+            <div className="aspect-video relative">
+              <img 
+                src="https://img.youtube.com/vi/lqMzsYgysL4/maxresdefault.jpg" 
+                alt="EVERfor Founder Video" 
+                className="w-full h-full object-cover" 
+              />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
                 <Play className="text-gold h-20 w-20 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
               </div>
