@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import jodiBurchPhoto from "@assets/49814802_10156181159735669_2893856751096954880_n_1755539467645.jpg";
+import julieChartierBrownPhoto from "@assets/20250228_130527_3036e5b0-000b-4bd6-aa67-6eb5821483ad_1755539120289.jpg";
 
 interface TestimonialsSectionProps {
   onBookingClick: () => void;
@@ -10,13 +12,13 @@ const testimonials = [
     quote: "EVERfor beautifully captured many moments of laughter, family history, love, wisdom, and memories that I will cherish and watch over and over for the rest of my life. His ability to choose the right questions for my parents was exceptional. Hearing their words of wisdom, advice, and family pride in their voices is priceless. I will always treasure these videos.",
     author: "Jodi Burch",
     package: "",
-    image: "@assets/49814802_10156181159735669_2893856751096954880_n_1755539467645.jpg"
+    image: jodiBurchPhoto
   },
   {
     quote: "EVERfor...you have forEVER made some very precious moments, and stories, alive for me and my family! I had no idea how grateful I am to have these videos made...they are priceless now...but will be true treasures in the future. Thank you so much for your insight on the impact these will be to our family now, and forever.",
     author: "Julie Chartier Brown",
     package: "",
-    image: "@assets/20250228_130527_3036e5b0-000b-4bd6-aa67-6eb5821483ad_1755539120289.jpg"
+    image: julieChartierBrownPhoto
   }
 ];
 
