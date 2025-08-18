@@ -13,9 +13,12 @@ const videoData = {
   featured: {
     title: "EVERfor them. EVERfor you.",
     description: "Experience how we transform intimate family conversations into cinematic treasures that will be cherished for generations.",
-    videoUrl: "/public-objects/videos/founder-video.mp4", // Will be your uploaded video
+    videoUrl: [
+      { src: "/public-objects/videos/founder-video-1080p.mp4", quality: "1080p", type: "video/mp4" },
+      { src: "/public-objects/videos/founder-video-720p.mp4", quality: "720p", type: "video/mp4" }
+    ],
     thumbnail: "https://img.youtube.com/vi/lqMzsYgysL4/maxresdefault.jpg",
-    isHosted: true // Flag to indicate self-hosted video
+    isHosted: true
   },
   wisdom: {
     title: "The Wisdom of Generations",

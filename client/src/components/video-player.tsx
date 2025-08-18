@@ -2,8 +2,14 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, Pause, Volume2, VolumeX, Maximize, Minimize } from "lucide-react";
 
-interface VideoPlayerProps {
+interface VideoSource {
   src: string;
+  quality: string;
+  type?: string;
+}
+
+interface VideoPlayerProps {
+  src: string | VideoSource[];
   title: string;
   poster?: string;
   className?: string;
@@ -26,6 +32,9 @@ export default function VideoPlayer({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [showControls, setShowControls] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const videoSources = Array.isArray(src) ? src : [{ src, quality: "HD" }];
 
   useEffect(() => {
     const video = videoRef.current;
@@ -37,11 +46,15 @@ export default function VideoPlayer({
     video.addEventListener('timeupdate', updateTime);
     video.addEventListener('loadedmetadata', updateDuration);
     video.addEventListener('ended', () => setIsPlaying(false));
+    video.addEventListener('loadstart', () => setIsLoading(true));
+    video.addEventListener('canplay', () => setIsLoading(false));
 
     return () => {
       video.removeEventListener('timeupdate', updateTime);
       video.removeEventListener('loadedmetadata', updateDuration);
       video.removeEventListener('ended', () => setIsPlaying(false));
+      video.removeEventListener('loadstart', () => setIsLoading(true));
+      video.removeEventListener('canplay', () => setIsLoading(false));
     };
   }, []);
 
@@ -102,13 +115,16 @@ export default function VideoPlayer({
     >
       <video
         ref={videoRef}
-        src={src}
         poster={poster}
         autoPlay={autoPlay}
+        preload="metadata"
         className="w-full h-full object-cover"
         onClick={togglePlay}
         data-testid="video-player"
       >
+        {videoSources.map((source, index) => (
+          <source key={index} src={source.src} type={source.type || "video/mp4"} />
+        ))}
         Your browser does not support the video tag.
       </video>
 
@@ -117,19 +133,25 @@ export default function VideoPlayer({
         <div className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 ${showControls ? 'opacity-100' : 'opacity-0'}`}>
           {/* Play/Pause Overlay */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <Button
-              onClick={togglePlay}
-              variant="ghost"
-              size="icon"
-              className="w-20 h-20 bg-gold/90 hover:bg-gold rounded-full text-navy hover:scale-110 transition-all duration-300"
-              data-testid="button-play-pause"
-            >
-              {isPlaying ? (
-                <Pause className="w-8 h-8 ml-0" />
-              ) : (
-                <Play className="w-8 h-8 ml-1" />
-              )}
-            </Button>
+            {isLoading ? (
+              <div className="w-20 h-20 bg-gold/90 rounded-full flex items-center justify-center">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-navy"></div>
+              </div>
+            ) : (
+              <Button
+                onClick={togglePlay}
+                variant="ghost"
+                size="icon"
+                className="w-20 h-20 bg-gold/90 hover:bg-gold rounded-full text-navy hover:scale-110 transition-all duration-300"
+                data-testid="button-play-pause"
+              >
+                {isPlaying ? (
+                  <Pause className="w-8 h-8 ml-0" />
+                ) : (
+                  <Play className="w-8 h-8 ml-1" />
+                )}
+              </Button>
+            )}
           </div>
 
           {/* Bottom Controls */}
