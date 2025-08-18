@@ -58,9 +58,27 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
               <div className="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-video relative">
                   <div className="w-full h-full bg-gradient-to-br from-navy to-deep-charcoal"></div>
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                    <Play className="text-gold h-12 w-12 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                  
+                  {/* Title Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <h3 className="font-cormorant text-3xl md:text-4xl font-bold text-gold mb-2">
+                        {video.id === 'essential' && 'Essential'}
+                        {video.id === 'signature' && 'Signature'}
+                        {video.id === 'eternal' && 'Eternal'}
+                      </h3>
+                      <div className="flex items-center justify-center text-cream/80 text-sm">
+                        <Play className="w-4 h-4 mr-2" />
+                        <span>Watch Introduction</span>
+                      </div>
+                    </div>
                   </div>
+                  
+                  {/* Hover Play Button */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                    <Play className="text-gold h-16 w-16 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                  </div>
+                  
                   <div className="absolute bottom-2 right-2 bg-black/60 text-white px-2 py-1 rounded text-xs flex items-center">
                     <Clock className="w-3 h-3 mr-1" />
                     {video.duration}
