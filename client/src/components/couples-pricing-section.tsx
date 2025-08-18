@@ -3,12 +3,10 @@ import { Heart, Users, Play } from "lucide-react";
 
 interface CouplesPricingSectionProps {
   onBookingClick: () => void;
+  onVideoClick: (videoId: string) => void;
 }
 
-export default function CouplesPricingSection({ onBookingClick }: CouplesPricingSectionProps) {
-  const openVideo = (url: string) => {
-    window.open(url, "_blank");
-  };
+export default function CouplesPricingSection({ onBookingClick, onVideoClick }: CouplesPricingSectionProps) {
 
   return (
     <section className="py-16 bg-gradient-to-br from-navy to-deep-charcoal">
@@ -26,41 +24,22 @@ export default function CouplesPricingSection({ onBookingClick }: CouplesPricing
           </p>
         </div>
 
-        {/* Side by side videos */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Jack's Video */}
-          <div className="relative group cursor-pointer" onClick={() => openVideo("https://youtu.be/z_CqH720zZQ")}>
+        {/* Featured Couple Video */}
+        <div className="mb-12 max-w-4xl mx-auto">
+          <div className="relative group cursor-pointer" onClick={() => onVideoClick("jack-nita")}>
             <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 relative overflow-hidden">
               <img 
                 src="https://img.youtube.com/vi/z_CqH720zZQ/maxresdefault.jpg" 
-                alt="Jack Earl Chartier Legacy Session" 
+                alt="Jack & Nita Chartier Legacy Sessions" 
                 className="w-full h-full object-cover transition-all duration-300" 
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <Play className="text-gold h-16 w-16 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                <Play className="text-gold h-20 w-20 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
               </div>
             </div>
-            <div className="text-center mt-4">
-              <h3 className="font-cormorant text-2xl font-bold text-navy mb-2">Jack Earl Chartier</h3>
-              <p className="text-white">Essential</p>
-            </div>
-          </div>
-
-          {/* Nita's Video */}
-          <div className="relative group cursor-pointer" onClick={() => openVideo("https://youtu.be/vNCN5kdD76k")}>
-            <div className="aspect-video bg-navy-light rounded-2xl border border-gold/20 relative overflow-hidden">
-              <img 
-                src="https://img.youtube.com/vi/vNCN5kdD76k/maxresdefault.jpg" 
-                alt="Nita Fern Chartier Legacy Session" 
-                className="w-full h-full object-cover transition-all duration-300" 
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <Play className="text-gold h-16 w-16 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
-              </div>
-            </div>
-            <div className="text-center mt-4">
-              <h3 className="font-cormorant text-2xl font-bold text-navy mb-2">Nita Fern Chartier</h3>
-              <p className="text-white">Essential</p>
+            <div className="text-center mt-6">
+              <h3 className="font-cormorant text-3xl font-bold text-cream mb-2">Jack & Nita Chartier</h3>
+              <p className="text-cream/80 text-lg">A 60+ Year Love Story - See How We Captured Their Legacy</p>
             </div>
           </div>
         </div>

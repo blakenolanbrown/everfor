@@ -37,6 +37,13 @@ const videoData = {
     videoUrl: "/public-objects/videos/eternal-intro.mp4",
     thumbnail: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450",
     isHosted: true
+  },
+  "jack-nita": {
+    title: "Jack & Nita Chartier - A Love Story",
+    description: "Experience how we captured this beautiful couple's 60+ year love story, showing the authentic conversations and precious memories that make each session unique.",
+    videoUrl: "/public-objects/videos/jack-nita-snippet.mp4",
+    thumbnail: "https://img.youtube.com/vi/z_CqH720zZQ/maxresdefault.jpg",
+    isHosted: true
   }
 };
 
