@@ -58,16 +58,22 @@ export default function VideoPlayer({
     };
   }, []);
 
-  const togglePlay = () => {
+  const togglePlay = async () => {
     const video = videoRef.current;
     if (!video) return;
 
-    if (isPlaying) {
-      video.pause();
-    } else {
-      video.play();
+    try {
+      if (isPlaying) {
+        video.pause();
+        setIsPlaying(false);
+      } else {
+        await video.play();
+        setIsPlaying(true);
+      }
+    } catch (error) {
+      console.error('Video play error:', error);
+      setIsPlaying(false);
     }
-    setIsPlaying(!isPlaying);
   };
 
   const toggleMute = () => {

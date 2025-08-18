@@ -1,4 +1,4 @@
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { X, Play } from "lucide-react";
 import VideoPlayer from "./video-player";
@@ -53,6 +53,8 @@ export default function VideoModal({ isOpen, onClose, videoId }: VideoModalProps
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl bg-navy p-0 border-0">
+        <DialogTitle className="sr-only">{video.title}</DialogTitle>
+        <DialogDescription className="sr-only">{video.description}</DialogDescription>
         <div className="relative">
           <Button
             onClick={onClose}
