@@ -13,10 +13,7 @@ const videoData = {
   featured: {
     title: "EVERfor them. EVERfor you.",
     description: "Experience how we transform intimate family conversations into cinematic treasures that will be cherished for generations.",
-    videoUrl: [
-      { src: "/public-objects/videos/founder-video-1080p.mp4", quality: "1080p", type: "video/mp4" },
-      { src: "/public-objects/videos/founder-video-720p.mp4", quality: "720p", type: "video/mp4" }
-    ],
+    videoUrl: "/public-objects/videos/founder-video.mp4",
     thumbnail: "https://img.youtube.com/vi/lqMzsYgysL4/maxresdefault.jpg",
     isHosted: true
   },

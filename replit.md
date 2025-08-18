@@ -94,6 +94,14 @@ The architecture supports easy scaling from development to production while main
 
 ## Recent Changes
 
+**August 18, 2025 - Self-Hosted Video Infrastructure**
+- ✓ Set up complete object storage system for video hosting
+- ✓ Created professional video player with brand-matched controls
+- ✓ Implemented adaptive video serving with loading states
+- ✓ Configured founder video for direct website hosting (66.42MB optimized)
+- ✓ Eliminated YouTube redirects - visitors stay engaged on site
+- ✓ Enhanced conversion optimization through seamless video experience
+
 **July 31, 2025 - Video Integration & Content Refinement**
 - ✓ Integrated live Calendly booking system with real URL (blakenolanbrown/legacy-video-discovery-call)
 - ✓ Added couples pricing section with 25% discount ($7,500 for two Essential sessions)
