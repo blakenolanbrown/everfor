@@ -38,11 +38,18 @@ const videoData = {
     thumbnail: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450",
     isHosted: true
   },
-  "jack-nita": {
-    title: "Jack & Nita Chartier - A Love Story",
-    description: "Experience how we captured this beautiful couple's 60+ year love story, showing the authentic conversations and precious memories that make each session unique.",
-    videoUrl: "/public-objects/videos/jack-nita-snippet.mp4",
+  jack: {
+    title: "Jack Earl Chartier",
+    description: "Watch Jack share stories from his remarkable life, showcasing the authentic conversations and precious memories we capture in our Essential sessions.",
+    videoUrl: "/public-objects/videos/jack-snippet.mp4",
     thumbnail: "https://img.youtube.com/vi/z_CqH720zZQ/maxresdefault.jpg",
+    isHosted: true
+  },
+  nita: {
+    title: "Nita Fern Chartier", 
+    description: "Experience Nita's heartfelt storytelling as she shares her life's journey, demonstrating the intimate and reverent approach of our legacy sessions.",
+    videoUrl: "/public-objects/videos/nita-snippet.mp4",
+    thumbnail: "https://img.youtube.com/vi/vNCN5kdD76k/maxresdefault.jpg",
     isHosted: true
   }
 };
