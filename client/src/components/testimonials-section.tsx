@@ -9,8 +9,8 @@ const testimonials = [
   {
     quote: "EVERfor beautifully captured many moments of laughter, family history, love, wisdom, and memories that I will cherish and watch over and over for the rest of my life. His ability to choose the right questions for my parents was exceptional. Hearing their words of wisdom, advice, and family pride in their voices is priceless. I will always treasure these videos.",
     author: "Jodi Burch",
-    package: "EVERfor Client",
-    image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+    package: "",
+    image: "@assets/49814802_10156181159735669_2893856751096954880_n_1755539467645.jpg"
   },
   {
     quote: "EVERfor...you have forEVER made some very precious moments, and stories, alive for me and my family! I had no idea how grateful I am to have these videos made...they are priceless now...but will be true treasures in the future. Thank you so much for your insight on the impact these will be to our family now, and forever.",
