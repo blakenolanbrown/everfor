@@ -67,7 +67,7 @@ export default function VideoGallery({ onVideoClick }: VideoGalleryProps) {
                         {video.id === 'signature' && 'Signature'}
                         {video.id === 'eternal' && 'Eternal'}
                       </h3>
-                      <div className="flex items-center justify-center text-cream/80 text-sm">
+                      <div className="flex items-center justify-center text-cream text-sm">
                         <Play className="w-4 h-4 mr-2" />
                         <span>Watch Introduction</span>
                       </div>
