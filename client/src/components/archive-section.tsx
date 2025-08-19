@@ -81,15 +81,15 @@ export default function ArchiveSection() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-gold text-3xl font-bold mb-2">99.999999999%</div>
-              <div className="text-cream/80 text-sm">Data Durability Rating</div>
+              <div className="text-warm-gray text-sm">Data Durability Rating</div>
             </div>
             <div>
               <div className="text-gold text-3xl font-bold mb-2">3+ Copies</div>
-              <div className="text-cream/80 text-sm">Of Every File Stored</div>
+              <div className="text-warm-gray text-sm">Of Every File Stored</div>
             </div>
             <div>
               <div className="text-gold text-3xl font-bold mb-2">24/7</div>
-              <div className="text-cream/80 text-sm">Monitoring & Maintenance</div>
+              <div className="text-warm-gray text-sm">Monitoring & Maintenance</div>
             </div>
           </div>
         </div>
