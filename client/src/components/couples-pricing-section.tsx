@@ -72,7 +72,7 @@ export default function CouplesPricingSection({ onBookingClick, onVideoClick }: 
           <div className="relative grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="font-cormorant text-3xl font-bold text-cream mb-4">
-                Jack & Nita's Legacy Sessions
+                Shared Legacy Sessions
               </h3>
               
               <p className="text-white/95 leading-relaxed mb-6">
