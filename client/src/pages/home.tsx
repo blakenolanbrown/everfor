@@ -3,6 +3,7 @@ import HeroSection from "@/components/hero-section";
 import VideoGallery from "@/components/video-gallery";
 import CouplesPricingSection from "@/components/couples-pricing-section";
 import ServicesSection from "@/components/services-section";
+import ArchiveSection from "@/components/archive-section";
 import AboutSection from "@/components/about-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import ContactSection from "@/components/contact-section";
@@ -97,6 +98,7 @@ export default function Home() {
       <VideoGallery onVideoClick={openVideoModal} />
       <ServicesSection onBookingClick={openBookingModal} />
       <CouplesPricingSection onBookingClick={openBookingModal} onVideoClick={openVideoModal} />
+      <ArchiveSection />
       <AboutSection onBookingClick={openBookingModal} />
       <TestimonialsSection onBookingClick={openBookingModal} />
       <ContactSection />
