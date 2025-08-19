@@ -1,0 +1,918 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERfor - Preserve Your Family's Legacy Forever</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'gold': '#D4AF37',
+                    'gold-light': '#E8C547',
+                    'gold-dark': '#B8941F',
+                    'navy': '#1B2951',
+                    'navy-light': '#2A3B6B',
+                    'cream': '#FAF7F0',
+                    'warm-gray': '#6B7280',
+                    'burgundy': '#8B1538'
+                },
+                fontFamily: {
+                    'playfair': ['Playfair Display', 'serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                    'crimson': ['Crimson Text', 'serif']
+                },
+                animation: {
+                    'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    'fade-in': 'fadeIn 1s ease-out forwards',
+                    'golden-thread': 'goldenThread 3s ease-in-out infinite'
+                }
+            }
+        }
+    };
+    </script>
+    
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes goldenThread {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+        
+        .golden-thread-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .video-overlay {
+            background: linear-gradient(135deg, rgba(27, 41, 81, 0.8) 0%, rgba(212, 175, 55, 0.2) 100%);
+        }
+        
+        .service-card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+        }
+        
+        .golden-border {
+            position: relative;
+        }
+        
+        .golden-border::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #D4AF37, #E8C547, #D4AF37);
+            border-radius: inherit;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="bg-cream font-inter text-navy">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-md border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
+                        <i class="fas fa-infinity text-cream text-lg"></i>
+                    </div>
+                    <span class="font-playfair text-2xl font-semibold text-navy">EVERfor</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-navy hover:text-gold transition-colors font-medium">Services</a>
+                    <a href="#gallery" class="text-navy hover:text-gold transition-colors font-medium">Gallery</a>
+                    <a href="#about" class="text-navy hover:text-gold transition-colors font-medium">About</a>
+                    <a href="#contact" class="text-navy hover:text-gold transition-colors font-medium">Contact</a>
+                </div>
+                
+                <button class="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300" data-event="click:openBooking">
+                    Book Consultation
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-navy text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Video/Image -->
+        <!-- A warm, golden-lit scene of an elderly grandmother reading to her grandchildren by a fireplace -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
+                 alt="Grandmother reading to grandchildren" 
+                 class="w-full h-full object-cover" />
+            <div class="absolute inset-0 video-overlay"></div>
+        </div>
+        
+        <!-- Golden Thread Animation -->
+        <div class="absolute top-1/4 right-1/4 w-32 h-32 opacity-30 animate-golden-thread">
+            <i class="fas fa-infinity text-gold text-6xl"></i>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <h1 class="font-playfair text-5xl md:text-7xl font-bold text-cream mb-6 animate-fade-in-up">
+                Every Story
+                <span class="block text-gold">Deserves Forever</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-cream/90 mb-8 leading-relaxed animate-fade-in-up" style="animation-delay: 0.3s;">
+                Preserve the wisdom, love, and irreplaceable stories of your family's most precious voices 
+                before they become memories.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style="animation-delay: 0.6s;">
+                <button class="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full text-lg hover:shadow-xl hover:scale-105 transition-all duration-300" data-event="click:openBooking">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Schedule Your Legacy Session
+                </button>
+                
+                <button class="border-2 border-cream text-cream font-semibold px-8 py-4 rounded-full text-lg hover:bg-cream hover:text-navy transition-all duration-300" data-event="click:scrollToGallery">
+                    <i class="fas fa-play mr-2"></i>
+                    Watch Our Work
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-cream text-2xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Value Proposition Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                    The Golden Thread of Your Legacy
+                </h2>
+                <p class="text-xl text-warm-gray max-w-3xl mx-auto leading-relaxed">
+                    Like a golden thread weaving through time, your family's stories connect generations. 
+                    We capture these precious moments before they slip away forever.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-heart text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Intimate Storytelling</h3>
+                    <p class="text-warm-gray leading-relaxed">
+                        We create a comfortable space where your loved ones can share their most treasured memories 
+                        and life lessons naturally.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-video text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Cinematic Quality</h3>
+                    <p class="text-warm-gray leading-relaxed">
+                        Professional-grade equipment and artistic direction ensure your family's stories 
+                        are preserved with the reverence they deserve.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-infinity text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold text-navy mb-4">Timeless Preservation</h3>
+                    <p class="text-warm-gray leading-relaxed">
+                        Your legacy videos are delivered in multiple formats and archived securely, 
+                        ensuring they last for generations to come.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Value Proposition Section -->
+
+    <!-- @COMPONENT: Video Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-br from-cream to-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                    Stories That Touch the Heart
+                </h2>
+                <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+                    Witness the power of preserved memories through our carefully crafted legacy films.
+                </p>
+            </div>
+            
+            <!-- Featured Video -->
+            <div class="mb-12">
+                <div class="relative bg-navy rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+                    <div class="aspect-video bg-navy flex items-center justify-center">
+                        <!-- A tender moment of an elderly man sharing stories with his family around a kitchen table -->
+                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&h=900" 
+                             alt="Elderly man sharing stories with family" 
+                             class="w-full h-full object-cover opacity-80" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button class="w-20 h-20 bg-gold/90 rounded-full flex items-center justify-center hover:bg-gold hover:scale-110 transition-all duration-300" data-event="click:playFeaturedVideo">
+                                <i class="fas fa-play text-navy text-2xl ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-playfair text-2xl font-semibold text-cream mb-3">
+                            "Stories of a Lifetime" - Featured Legacy Film
+                        </h3>
+                        <p class="text-cream/80 leading-relaxed">
+                            Experience how we transform intimate family conversations into cinematic treasures 
+                            that will be cherished for generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Thumbnails Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- @MAP: videoThumbnails.map(video => ( -->
+                <div class="group cursor-pointer" data-event="click:openVideoModal">
+                    <div class="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <div class="aspect-video">
+                            <!-- An intimate conversation between grandmother and granddaughter in a cozy living room -->
+                            <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450" 
+                                 alt="Grandmother and granddaughter conversation" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                            <div class="absolute inset-0 bg-navy/40 group-hover:bg-navy/20 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-gold/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <i class="fas fa-play text-navy ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-cream text-sm" data-mock="true">The Wisdom of Generations</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer" data-event="click:openVideoModal">
+                    <div class="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <div class="aspect-video">
+                            <!-- A family gathering around a dining table with multiple generations sharing a meal -->
+                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450" 
+                                 alt="Multi-generational family dinner" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                            <div class="absolute inset-0 bg-navy/40 group-hover:bg-navy/20 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-gold/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <i class="fas fa-play text-navy ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-cream text-sm" data-mock="true">Family Traditions Live On</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer" data-event="click:openVideoModal">
+                    <div class="relative bg-navy rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <div class="aspect-video">
+                            <!-- An elderly couple holding hands and looking through old photo albums together -->
+                            <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=450" 
+                                 alt="Elderly couple with photo albums" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                            <div class="absolute inset-0 bg-navy/40 group-hover:bg-navy/20 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-gold/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <i class="fas fa-play text-navy ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-cream text-sm" data-mock="true">A Love Story Remembered</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Video Gallery Section -->
+
+    <!-- @COMPONENT: Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                    Choose Your Legacy Package
+                </h2>
+                <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+                    Each package is designed to honor your family's unique story with the care and artistry it deserves.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Essential Package -->
+                <div class="bg-cream border border-gold/20 rounded-2xl p-8 service-card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-gem text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold text-navy mb-2">Essential</h3>
+                        <div class="text-4xl font-bold text-gold mb-1">$5,000</div>
+                        <p class="text-warm-gray">Perfect for capturing core family stories</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">2-hour intimate storytelling session</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Professional lighting & audio setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">15-minute edited legacy film</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Digital delivery in multiple formats</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Cloud backup & archival</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gradient-to-r from-gold to-gold-light text-navy font-semibold py-4 rounded-full hover:shadow-lg transition-all duration-300" data-event="click:selectPackage" data-package="essential">
+                        Choose Essential
+                    </button>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="relative bg-navy border-2 border-gold rounded-2xl p-8 service-card-hover transition-all duration-300 golden-border">
+                    <!-- Popular Badge -->
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-gold text-navy px-6 py-2 rounded-full text-sm font-semibold">
+                            Most Popular
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-light rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-crown text-navy text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold text-cream mb-2">Premium</h3>
+                        <div class="text-4xl font-bold text-gold mb-1">$10,000</div>
+                        <p class="text-cream/80">Comprehensive storytelling experience</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-cream">4-hour storytelling sessions (2 visits)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-cream">Cinema-quality equipment & crew</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-cream">30-minute cinematic legacy film</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-cream">Raw interview footage included</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-cream">Custom music & color grading</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-cream">Physical keepsake package</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gradient-to-r from-gold to-gold-light text-navy font-semibold py-4 rounded-full hover:shadow-lg transition-all duration-300" data-event="click:selectPackage" data-package="premium">
+                        Choose Premium
+                    </button>
+                </div>
+                
+                <!-- Elite Package -->
+                <div class="bg-cream border border-gold/20 rounded-2xl p-8 service-card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gold/20 to-gold/40 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-star text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold text-navy mb-2">Elite</h3>
+                        <div class="text-4xl font-bold text-gold mb-1">$20,000</div>
+                        <p class="text-warm-gray">The ultimate legacy preservation</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">6-hour storytelling sessions (3 visits)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Multi-location filming options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">60-minute documentary-style film</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Family history research integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Custom score composition</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gold mt-1 mr-3"></i>
+                            <span class="text-navy">Luxury presentation package</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gradient-to-r from-gold to-gold-light text-navy font-semibold py-4 rounded-full hover:shadow-lg transition-all duration-300" data-event="click:selectPackage" data-package="elite">
+                        Choose Elite
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Additional Info -->
+            <div class="mt-12 text-center">
+                <p class="text-warm-gray mb-4">
+                    All packages include lifetime technical support and format updates as technology evolves.
+                </p>
+                <button class="text-gold hover:text-gold-dark font-semibold underline" data-event="click:openConsultation">
+                    Not sure which package? Schedule a free consultation →
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Section -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-cream to-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- A professional portrait of a videographer with warm, trustworthy lighting -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
+                         alt="Professional videographer portrait" 
+                         class="rounded-2xl shadow-2xl w-full max-w-md mx-auto" />
+                </div>
+                
+                <div>
+                    <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                        Why I Created EVERfor
+                    </h2>
+                    
+                    <div class="space-y-6 text-lg text-warm-gray leading-relaxed">
+                        <p>
+                            After losing my grandmother without capturing her incredible stories, I realized how many 
+                            precious memories disappear forever when our loved ones pass away. That moment changed everything.
+                        </p>
+                        
+                        <p>
+                            EVERfor was born from this deeply personal experience. I've dedicated my career to ensuring 
+                            other families don't face the same regret—that feeling of wishing you had "just one more 
+                            conversation" recorded.
+                        </p>
+                        
+                        <p class="font-crimson italic text-xl text-navy">
+                            "Every family has stories worth preserving. My mission is to capture them with the reverence 
+                            and artistry they deserve, creating treasures that will be cherished for generations."
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gold mb-1" data-bind="stats.familiesServed">50+</div>
+                            <div class="text-warm-gray">Families Served</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gold mb-1" data-bind="stats.yearsExperience">15+</div>
+                            <div class="text-warm-gray">Years Experience</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <button class="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full hover:shadow-lg transition-all duration-300" data-event="click:openAboutModal">
+                            Learn More About My Journey
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
+                    What Families Are Saying
+                </h2>
+                <p class="text-xl text-warm-gray">
+                    The true measure of our work is in the hearts we touch and the legacies we preserve.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-cream rounded-2xl p-8 relative">
+                    <div class="text-gold text-6xl font-crimson absolute top-4 left-6 opacity-30">"</div>
+                    <div class="pt-8">
+                        <p class="text-navy text-lg leading-relaxed font-crimson italic mb-6">
+                            We almost waited too long. Dad passed just three months after we filmed his stories 
+                            with EVERfor. Now we have his voice, his laughter, and his wisdom preserved forever. 
+                            This is the most precious gift our family has ever received.
+                        </p>
+                        <div class="flex items-center">
+                            <!-- A warm family photo with multiple generations -->
+                            <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150" 
+                                 alt="Family testimonial photo" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4" />
+                            <div>
+                                <div class="font-semibold text-navy" data-mock="true">Sarah M.</div>
+                                <div class="text-warm-gray text-sm" data-mock="true">Premium Package Client</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-cream rounded-2xl p-8 relative">
+                    <div class="text-gold text-6xl font-crimson absolute top-4 left-6 opacity-30">"</div>
+                    <div class="pt-8">
+                        <p class="text-navy text-lg leading-relaxed font-crimson italic mb-6">
+                            The way Blake captured Mom's stories was magical. She felt so comfortable sharing 
+                            things she'd never told us before. The final film moves me to tears every time—
+                            it's pure artistry combined with deep respect for her legacy.
+                        </p>
+                        <div class="flex items-center">
+                            <!-- An elderly woman smiling warmly at the camera -->
+                            <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150" 
+                                 alt="Client testimonial photo" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4" />
+                            <div>
+                                <div class="font-semibold text-navy" data-mock="true">Michael R.</div>
+                                <div class="text-warm-gray text-sm" data-mock="true">Elite Package Client</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="mt-12 text-center">
+                <p class="text-warm-gray mb-6">
+                    Ready to preserve your family's most precious stories?
+                </p>
+                <button class="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300" data-event="click:openBooking">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Schedule Your Free Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 bg-navy text-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-6">
+                    Let's Begin Your Legacy
+                </h2>
+                <p class="text-xl text-cream/80 max-w-3xl mx-auto">
+                    Every moment matters. Every story deserves to be preserved. Let's capture your family's legacy together.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-navy-light rounded-2xl p-8">
+                    <h3 class="font-playfair text-2xl font-semibold mb-6">Get In Touch</h3>
+                    
+                    <form class="space-y-6" data-implementation="Integrate with lead capture system">
+                        <!-- @STATE: formData:object = {} -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 bg-cream text-navy rounded-lg focus:ring-2 focus:ring-gold focus:outline-none" 
+                                   data-bind="formData.name" />
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 bg-cream text-navy rounded-lg focus:ring-2 focus:ring-gold focus:outline-none"
+                                   data-bind="formData.email" />
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" 
+                                   class="w-full px-4 py-3 bg-cream text-navy rounded-lg focus:ring-2 focus:ring-gold focus:outline-none"
+                                   data-bind="formData.phone" />
+                        </div>
+                        
+                        <div>
+                            <label for="package" class="block text-sm font-medium mb-2">Interested Package</label>
+                            <select id="package" name="package" 
+                                    class="w-full px-4 py-3 bg-cream text-navy rounded-lg focus:ring-2 focus:ring-gold focus:outline-none"
+                                    data-bind="formData.package">
+                                <option value="">Please select...</option>
+                                <option value="essential">Essential ($5,000)</option>
+                                <option value="premium">Premium ($10,000)</option>
+                                <option value="elite">Elite ($20,000)</option>
+                                <option value="consultation">Free Consultation First</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Tell us about your family's story</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-3 bg-cream text-navy rounded-lg focus:ring-2 focus:ring-gold focus:outline-none resize-none"
+                                      placeholder="Share what makes your family's legacy special..."
+                                      data-bind="formData.message"></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-gold to-gold-light text-navy font-semibold py-4 rounded-full hover:shadow-lg transition-all duration-300"
+                                data-event="click:submitContactForm">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-playfair text-2xl font-semibold mb-6">Ready to Get Started?</h3>
+                        <p class="text-cream/80 leading-relaxed mb-6">
+                            Time is precious, and every day we wait is another day of stories that might be lost. 
+                            Let's schedule your consultation and begin preserving your family's most treasured memories.
+                        </p>
+                        
+                        <button class="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-8 py-4 rounded-full hover:shadow-lg transition-all duration-300 mb-8"
+                                data-event="click:openCalendly">
+                            <i class="fas fa-video mr-2"></i>
+                            Book Free Video Consultation
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-gold"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <div class="text-cream/80" data-mock="true">hello@everfor.family</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-gold"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Phone</div>
+                                <div class="text-cream/80" data-mock="true">(555) 123-EVER</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-gold"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Response Time</div>
+                                <div class="text-cream/80">Within 24 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Urgency Message -->
+                    <div class="bg-burgundy/20 border border-burgundy/30 rounded-xl p-6 mt-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-heart text-burgundy text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-cream mb-2">Don't Wait Too Long</h4>
+                                <p class="text-cream/80 text-sm leading-relaxed">
+                                    Every week, families reach out wishing they had started this process sooner. 
+                                    The best time to preserve your family's stories is now, while everyone is healthy 
+                                    and the memories are fresh.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-navy-light border-t border-gold/20 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
+                            <i class="fas fa-infinity text-cream text-lg"></i>
+                        </div>
+                        <span class="font-playfair text-2xl font-semibold text-cream">EVERfor</span>
+                    </div>
+                    <p class="text-cream/70 leading-relaxed">
+                        Preserving family legacies with reverence, artistry, and the understanding that every story matters.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-cream mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#services" class="block text-cream/70 hover:text-gold transition-colors">Services</a>
+                        <a href="#gallery" class="block text-cream/70 hover:text-gold transition-colors">Gallery</a>
+                        <a href="#about" class="block text-cream/70 hover:text-gold transition-colors">About</a>
+                        <a href="#contact" class="block text-cream/70 hover:text-gold transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-cream mb-4">Get In Touch</h4>
+                    <div class="space-y-2 text-cream/70">
+                        <div data-mock="true">hello@everfor.family</div>
+                        <div data-mock="true">(555) 123-EVER</div>
+                        <div class="pt-4">
+                            <button class="bg-gradient-to-r from-gold to-gold-light text-navy font-semibold px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300"
+                                    data-event="click:openBooking">
+                                Book Consultation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gold/20 mt-12 pt-8 text-center">
+                <p class="text-cream/60">
+                    © 2024 EVERfor. All rights reserved. • Preserving legacies, one story at a time.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, and state management
+        
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('section > div').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                observer.observe(el);
+            });
+
+            // Placeholder for booking modal
+            function openBookingModal() {
+                // TODO: Integrate with Calendly or booking system
+                alert('Booking system integration needed. This would open a calendar booking modal.');
+            }
+
+            // Placeholder for video modal
+            function openVideoModal() {
+                // TODO: Implement video modal with proper video players
+                alert('Video modal integration needed. This would display the selected video.');
+            }
+
+            // Add event listeners for interactive elements
+            document.addEventListener('click', function(e) {
+                const element = e.target.closest('[data-event]');
+                if (element) {
+                    const eventType = element.getAttribute('data-event');
+                    
+                    switch(eventType) {
+                        case 'click:openBooking':
+                        case 'click:openConsultation':
+                        case 'click:openCalendly':
+                            openBookingModal();
+                            break;
+                        case 'click:openVideoModal':
+                        case 'click:playFeaturedVideo':
+                            openVideoModal();
+                            break;
+                        case 'click:selectPackage':
+                            const packageType = element.getAttribute('data-package');
+                            // TODO: Handle package selection
+                            console.log('Selected package:', packageType);
+                            openBookingModal();
+                            break;
+                        case 'click:submitContactForm':
+                            e.preventDefault();
+                            // TODO: Handle form submission
+                            alert('Form submission would be handled here with proper validation and API integration.');
+                            break;
+                        case 'click:scrollToGallery':
+                            document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+                            break;
+                    }
+                }
+            });
+
+            // Mobile menu toggle (placeholder)
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle
+                    console.log('Mobile menu toggle would be implemented here');
+                });
+            }
+
+            // Form validation placeholders
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement proper form validation and submission
+                    console.log('Form validation and submission would be handled here');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
