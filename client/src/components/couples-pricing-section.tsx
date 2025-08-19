@@ -122,11 +122,11 @@ export default function CouplesPricingSection({ onBookingClick, onVideoClick }: 
                 </div>
               </div>
               
-              <div className="mt-4 pt-4 border-t border-navy/20">
+              <div className="mt-4 pt-4 border-t border-navy/20 text-center">
                 <div className="text-navy/80 text-sm font-medium">25% savings on all packages</div>
               </div>
               
-              <div className="bg-gold/20 rounded-xl p-4 mb-6">
+              <div className="bg-gold/20 rounded-xl p-4 mb-6 text-center">
                 <div className="text-navy font-semibold text-lg mb-1">Save $2,500 - $10,000</div>
                 <div className="text-navy/70 text-sm">Since we're already on location</div>
               </div>
