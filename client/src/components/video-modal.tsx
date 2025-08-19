@@ -41,14 +41,14 @@ const videoData = {
   jack: {
     title: "Jack Earl Chartier",
     description: "Watch Jack share stories from his remarkable life, showcasing the authentic conversations and precious memories we capture in our Essential sessions.",
-    videoUrl: "/public-objects/videos/jack-snippet.mp4",
+    videoUrl: "/public-objects/videos/jack-clip.mp4",
     thumbnail: "https://img.youtube.com/vi/z_CqH720zZQ/maxresdefault.jpg",
     isHosted: true
   },
   nita: {
     title: "Nita Fern Chartier", 
     description: "Experience Nita's heartfelt storytelling as she shares her life's journey, demonstrating the intimate and reverent approach of our legacy sessions.",
-    videoUrl: "/public-objects/videos/nita-snippet.mp4",
+    videoUrl: "/public-objects/videos/nita-clip.mp4",
     thumbnail: "https://img.youtube.com/vi/vNCN5kdD76k/maxresdefault.jpg",
     isHosted: true
   }
