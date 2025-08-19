@@ -95,16 +95,39 @@ export default function CouplesPricingSection({ onBookingClick, onVideoClick }: 
               </div>
             </div>
 
-            <div className="bg-cream rounded-2xl p-8 text-center">
-              <div className="mb-6">
-                <div className="text-navy/60 text-lg mb-2">Individual Sessions</div>
-                <div className="text-navy/60 line-through text-2xl mb-2">$10,000</div>
-                <div className="text-navy font-bold text-4xl mb-2">$7,500</div>
-                <div className="text-navy/80 text-sm">for both sessions combined</div>
+            <div className="bg-cream rounded-2xl p-6">
+              <div className="grid grid-cols-3 gap-4 text-center">
+                {/* Essential */}
+                <div className="border-r border-navy/20 pr-4">
+                  <div className="text-navy/60 text-sm mb-2">Essential</div>
+                  <div className="text-navy/60 line-through text-lg mb-1">$10,000</div>
+                  <div className="text-navy font-bold text-2xl mb-1">$7,500</div>
+                  <div className="text-navy/80 text-xs">for both sessions</div>
+                </div>
+                
+                {/* Signature */}
+                <div className="border-r border-navy/20 pr-4">
+                  <div className="text-navy/60 text-sm mb-2">Signature</div>
+                  <div className="text-navy/60 line-through text-lg mb-1">$20,000</div>
+                  <div className="text-navy font-bold text-2xl mb-1">$15,000</div>
+                  <div className="text-navy/80 text-xs">for both sessions</div>
+                </div>
+                
+                {/* Eternal */}
+                <div>
+                  <div className="text-navy/60 text-sm mb-2">Eternal</div>
+                  <div className="text-navy/60 line-through text-lg mb-1">$40,000</div>
+                  <div className="text-navy font-bold text-2xl mb-1">$30,000</div>
+                  <div className="text-navy/80 text-xs">for both sessions</div>
+                </div>
+              </div>
+              
+              <div className="mt-4 pt-4 border-t border-navy/20">
+                <div className="text-navy/80 text-sm font-medium">25% savings on all packages</div>
               </div>
               
               <div className="bg-gold/20 rounded-xl p-4 mb-6">
-                <div className="text-navy font-semibold text-lg mb-1">You Save $2,500</div>
+                <div className="text-navy font-semibold text-lg mb-1">Save $2,500 - $10,000</div>
                 <div className="text-navy/70 text-sm">Since we're already on location</div>
               </div>
               
