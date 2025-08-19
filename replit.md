@@ -94,13 +94,17 @@ The architecture supports easy scaling from development to production while main
 
 ## Recent Changes
 
-**August 18, 2025 - Self-Hosted Video Infrastructure**
+**August 18, 2025 - Complete Video Infrastructure & Archive System**
 - ✓ Set up complete object storage system for video hosting
 - ✓ Created professional video player with brand-matched controls
 - ✓ Implemented adaptive video serving with loading states
 - ✓ Configured founder video for direct website hosting (66.42MB optimized)
-- ✓ Eliminated YouTube redirects - visitors stay engaged on site
-- ✓ Enhanced conversion optimization through seamless video experience
+- ✓ Added package introduction videos with title overlays (Essential, Signature, Eternal)
+- ✓ Updated Jack & Nita videos to self-hosted clips with improved pricing layout
+- ✓ Created comprehensive 3-column couples pricing showing all packages (25% savings)
+- ✓ Added enterprise-grade archive section (AWS Glacier Deep Archive, RAID NAS)
+- ✓ Eliminated all YouTube redirects - complete self-hosted video experience
+- ✓ Enhanced conversion optimization through seamless on-site experience
 
 **July 31, 2025 - Video Integration & Content Refinement**
 - ✓ Integrated live Calendly booking system with real URL (blakenolanbrown/legacy-video-discovery-call)
