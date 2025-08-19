@@ -40,7 +40,7 @@ export default function CouplesPricingSection({ onBookingClick, onVideoClick }: 
             </div>
             <div className="text-center mt-4">
               <h3 className="font-cormorant text-2xl font-bold text-navy mb-2">Jack Earl Chartier</h3>
-              <p className="text-white">Essential</p>
+              <p className="text-warm-gray">Essential</p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export default function CouplesPricingSection({ onBookingClick, onVideoClick }: 
             </div>
             <div className="text-center mt-4">
               <h3 className="font-cormorant text-2xl font-bold text-navy mb-2">Nita Fern Chartier</h3>
-              <p className="text-white">Essential</p>
+              <p className="text-warm-gray">Essential</p>
             </div>
           </div>
         </div>
