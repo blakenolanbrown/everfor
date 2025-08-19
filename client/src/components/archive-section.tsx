@@ -73,7 +73,7 @@ export default function ArchiveSection() {
             <h3 className="font-cormorant text-2xl font-bold text-cream mb-4">
               Enterprise-Grade Protection
             </h3>
-            <p className="text-cream/90">
+            <p className="text-warm-gray">
               The same technology trusted by Fortune 500 companies to protect their most valuable data
             </p>
           </div>
